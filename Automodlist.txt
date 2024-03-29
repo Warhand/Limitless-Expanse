@@ -4,7 +4,10 @@ C:.
     AdvancementPlaques-1.20.1-forge-1.4.10.jar
     AirHop-v8.0.2-1.20.1-Forge.jar
     alternate_current-mc1.20-1.7.0.jar
+    amendments-1.20-1.1.11.jar
     Amplified_Nether_1.20.4_v1.2.4.jar
+    Apotheosis-1.20.1-7.3.3.jar
+    ApothicAttributes-1.20.1-1.3.3.jar
     appleskin-forge-mc1.20.1-2.5.1.jar
     architectury-9.1.12-forge.jar
     argonauts-forge-1.20.1-0.1.2.jar
@@ -19,6 +22,7 @@ C:.
     Bookshelf-Forge-1.20.1-20.1.8.jar
     bwncr-forge-1.20.1-3.17.0.jar
     cadmus-forge-1.20.1-1.0.6.jar
+    caelus-forge-3.1.0+1.20.jar
     canary-mc1.20.1-0.3.2.jar
     cherishedworlds-forge-6.1.4+1.20.1.jar
     Chunky-1.3.92.jar
@@ -41,11 +45,13 @@ C:.
     EasyMagic-v8.0.1-1.20.1-Forge.jar
     EchoChest-v8.0.0-1.20.1-Forge.jar
     EffectDescriptions-v8.0.2-1.20.1-Forge.jar
+    elytraslot-forge-6.3.0+1.20.1.jar
     embeddium-0.3.4+mc1.20.1.jar
     emoji-type-2.2.3+1.20.4-forge.jar
     EnchantingInfuser-v8.0.2-1.20.1-Forge.jar
     EnchantmentDescriptions-Forge-1.20.1-17.0.13.jar
     EnderZoology-v8.0.1-1.20.1-Forge.jar
+    endrem_forge-5.2.3-R-1.20.X.jar
     entityculling-forge-1.6.2-mc1.20.1.jar
     everycomp-1.20-2.6.34.jar
     experimentalsettingsdisabler-1.20.1-3.0.jar
@@ -56,6 +62,7 @@ C:.
     Fastload-Reforged-mc1.20.1-3.4.0.jar
     ferritecore-6.0.1-forge.jar
     flickerfix-1.20.1-4.0.1.jar
+    friendsandfoes-forge-mc1.20.1-2.0.10.jar
     Galosphere-1.20.1-1.4.1-Forge.jar
     geckolib-forge-1.20.1-4.4.2.jar
     GeophilicReforged-v1.2.0.jar
@@ -80,7 +87,7 @@ C:.
     modelfix-1.14.jar
     modernfix-forge-5.13.0+mc1.20.1.jar
     Momentum-1.20.1-4.0.0.jar
-    moonlight-1.20-2.9.17-forge.jar
+    moonlight-1.20-2.11.9-forge.jar
     MouseTweaks-forge-mc1.20-2.25.jar
     naturalist-forge-4.0.3-1.20.1.jar
     NetherChested-v8.0.3-1.20.1-Forge.jar
@@ -88,8 +95,10 @@ C:.
     Nullscape_1.20.4_v1.2.4.jar
     OpenLoader-Forge-1.20.1-19.0.3.jar
     OverflowingBars-v8.0.0-1.20.1-Forge.jar
+    Patchouli-1.20.1-84-FORGE.jar
     PickUpNotifier-v8.0.0-1.20.1-Forge.jar
     Ping-Wheel-1.7.1-forge-1.20.1.jar
+    Placebo-1.20.1-8.6.1.jar
     PortableHole-v8.0.0-1.20.1-Forge.jar
     Prism-1.20.1-forge-1.0.5.jar
     prometheus-forge-1.20.1-1.2.4.jar
@@ -113,7 +122,7 @@ C:.
     stuffaintcheap-1.20.1-1.0.2.jar
     StylishEffects-v8.0.0-1.20.1-Forge.jar
     supermartijn642configlib-1.1.8-forge-mc1.20.jar
-    supplementaries-1.20-2.7.36.jar
+    supplementaries-1.20-2.8.7.jar
     tectonic-mod-1.19.3-v2.2.jar
     TreeChop-1.20.1-forge-0.18.8.jar
     trulytreasures-1.20-3.0.0-forge.jar
@@ -139,5 +148,5 @@ C:.
     
 No subfolders exist 
 
-Thu 03/21/2024 
-05:54 PM
+Fri 03/29/2024 
+03:43 PM
