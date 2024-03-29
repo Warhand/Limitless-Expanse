@@ -1,0 +1,70 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "#minecraft:logs": {
+      "type": "heracles:item",
+      "item": "#minecraft:logs",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "Logs",
+      "icon": {
+        "item": {
+          "id": "minecraft:oak_log",
+          "count": 1
+        },
+        "type": "heracles:item"
+      }
+    }
+  },
+  "rewards": {
+    "1": {
+      "title": "Common Hat",
+      "icon": {
+        "item": {
+          "id": "minecraft:air",
+          "count": 0
+        },
+        "type": "heracles:item"
+      },
+      "item": {
+        "id": "simplehats:hatbag_common",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Main": {
+        "position": [
+          -14,
+          -4
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:oak_log",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png",
+    "title": {
+      "translate": "Getting Wood"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

@@ -1,0 +1,8 @@
+
+#Momentum common configuration
+[common]
+
+	[common.mode]
+		#Whether the momentum caps if a player moves. If false, it will cap after a certain amount of blocks, like originally. Default: true
+		"No Moving" = true
+

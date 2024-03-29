@@ -1,0 +1,114 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:enchanted_book",
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "betterarcheology:penetrating_strike": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:enchanted_book",
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "betterarcheology:tunneling": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:enchanted_book",
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "enderzoology:withering": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:enchanted_book",
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "enderzoology:decay": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:enchanted_book",
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "veinmining:vein_mining": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:enchanted_book",
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "momentum:momentum": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:enchanted_book",
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:mending": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:enchanted_book",
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "betterarcheology:soaring_winds": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
