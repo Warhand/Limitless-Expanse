@@ -60,11 +60,11 @@
 			"shouldFilterDisplays": true,
 			"filteringRules": [
 				"{id:\"roughlyenoughitems:manual\",rule:{}}",
-				"{id:\"roughlyenoughitems:basic\",rule:{}}"
+				"{id:\"roughlyenoughitems:basic\",rule:{}}",
+				"{id:\"roughlyenoughitems:hidden_from_recipe_viewers\",rule:{}}"
 			],
 			"filteringQuickCraftCategories": { },
 			"filteredStacks": [
-				"{Count:1b,id:\"minecraft:enchanted_book\",tag:{StoredEnchantments:[{id:\"betterarcheology:soaring_winds\",lvl:1s}],display:{Name:'{\"translate\":\"item.betterarcheology.identified_artifact\"}'}},type:\"minecraft:item\"}",
 				"{Count:1b,id:\"quark:seed_pouch\",tag:{itemCount:640,storedItem:{Count:1b,id:\"supplementaries:flax_seeds\"}},type:\"minecraft:item\"}"
 			]
 		},
