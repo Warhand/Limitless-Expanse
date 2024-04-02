@@ -75,7 +75,10 @@ val trash as IIngredient[] = [
 	<item:enderzoology:confusing_charge>,
 	<item:enderzoology:confusing_powder>,
 	<item:friendsandfoes:totem_of_illusion>,
-	<item:friendsandfoes:totem_of_freezing>
+	<item:friendsandfoes:totem_of_freezing>,
+	<item:shieldexp:paragon_shield>,
+	<item:shieldexp:griefer_shield>,
+	<item:minecraft:shield>
 ];
 
 for item in trash{
