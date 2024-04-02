@@ -6,6 +6,7 @@ import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.recipe.SmithingRecipeManager;
 import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.item.alchemy.Potion;
+
 val block_diamond = <item:minecraft:diamond_block>;
 val block_gold = <tag:items:forge:storage_blocks/gold>;
 val block_iron = <tag:items:forge:storage_blocks/iron>;
@@ -187,3 +188,12 @@ craftingTable.addShaped("infuser_upgrade", <item:enchantinginfuser:advanced_ench
 	[nether_ingot, scale, nether_ingot], 
 	[scale, <item:enchantinginfuser:enchanting_infuser>, scale]
 ]);
+
+<recipetype:lychee:anvil_crafting>.addJsonRecipe(
+	"totem_recharge", 
+	{
+		"item_in": [<item:kubejs:inert_totem>, <item:illagerinvasion:hallowed_gem>],
+		"item_out": <item:minecraft:totem_of_undying>,
+		"level_cost": 3
+	}
+);
