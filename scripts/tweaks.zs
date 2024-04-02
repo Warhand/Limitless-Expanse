@@ -76,17 +76,19 @@ events.register<FinalizeMobSpawnEvent>(event => {
 events.register<DetonateExplosionEvent>(event => {
 	val source = event.explosion.damageSource.directEntity;
 	val lev = event.level;
-	if lev.isClientSide {
-		return;
-	}
-	if source.getType() == <entitytype:enderzoology:primed_charge>{
-		val bomb_type = source.data["EntityInteraction"];
-		if bomb_type == 0 {
-			val affected_blocks = event.affectedBlocks;
-			for position in affected_blocks {
-				val block = lev.getBlockState(position);
-				if block == <blockstate:minecraft:stone> {
-					lev.setBlockAndUpdate(position, <blockstate:minecraft:end_stone>);
+	if source != null {
+		if lev.isClientSide {
+			return;
+		}
+		if source.getType() == <entitytype:enderzoology:primed_charge>{
+			val bomb_type = source.data["EntityInteraction"];
+			if bomb_type == 0 {
+				val affected_blocks = event.affectedBlocks;
+				for position in affected_blocks {
+					val block = lev.getBlockState(position);
+					if block == <blockstate:minecraft:stone> {
+						lev.setBlockAndUpdate(position, <blockstate:minecraft:end_stone>);
+					}
 				}
 			}
 		}
