@@ -4,7 +4,7 @@ C:.
 |   AdvancementPlaques-1.20.1-forge-1.4.10.jar
 |   AirHop-v8.0.2-1.20.1-Forge.jar
 |   alternate_current-mc1.20-1.7.0.jar
-|   amendments-1.20-1.1.21.jar
+|   amendments-1.20-1.1.22.jar
 |   Apotheosis-1.20.1-7.3.3.jar
 |   ApothicAttributes-1.20.1-1.3.3.jar
 |   appleskin-forge-mc1.20.1-2.5.1.jar
@@ -13,7 +13,7 @@ C:.
 |   AttributeFix-Forge-1.20.1-21.0.4.jar
 |   balm-forge-1.20.1-7.2.2.jar
 |   BetterAdvancements-1.20.1-0.3.2.162.jar
-|   betterarcheology-1.1.7-1.20.1.jar
+|   betterarcheology-1.1.8-1.20.1.jar
 |   BetterModsButton-v8.0.2-1.20.1-Forge.jar
 |   BetterTridents-v8.0.1-1.20.1-Forge.jar
 |   blueprint-1.20.1-7.0.3.jar
@@ -56,10 +56,10 @@ C:.
 |   EnderZoology-v8.0.2-1.20.1-Forge.jar
 |   endrem_forge-5.2.3-R-1.20.X.jar
 |   entityculling-forge-1.6.2-mc1.20.1.jar
-|   everycomp-1.20-2.6.51.jar
+|   everycomp-1.20-2.6.52.jar
 |   experimentalsettingsdisabler-1.20.1-3.0.jar
 |   explorify-v1.3.0-mc1.20.jar
-|   fabric-api-0.92.1+1.11.7+1.20.1.jar
+|   fabric-api-0.92.1+1.11.8+1.20.1.jar
 |   fancymenu_forge_3.1.5_MC_1.20.1.jar
 |   FarmersDelight-1.20.1-1.2.4.jar
 |   Fastload-Reforged-mc1.20.1-3.4.0.jar
@@ -80,7 +80,7 @@ C:.
 |   Jade-1.20.1-forge-11.8.0.jar
 |   JeiTweaker-forge-1.20.1-8.0.6.jar
 |   justhammers-forge-2.0.3+mc1.20.1.jar
-|   Kiwi-1.20.1-forge-11.6.0.jar
+|   Kiwi-1.20.1-forge-11.6.2.jar
 |   konkrete_forge_1.8.0_MC_1.20-1.20.1.jar
 |   kubejs-forge-2001.6.5-build.7.jar
 |   LeavesBeGone-v8.0.0-1.20.1-Forge.jar
@@ -122,7 +122,7 @@ C:.
 |   Searchables-forge-1.20.1-1.0.2.jar
 |   ShieldExpansion-1.20.1-1.1.7a.jar
 |   SimpleBackups-1.20.1-3.1.4.jar
-|   simplehats-forge-1.20.1-0.2.2.jar
+|   simplehats-forge-1.20.1-0.2.4.jar
 |   smoothboot(reloaded)-mc1.20.1-0.0.4.jar
 |   SnowRealMagic-1.20.1-forge-10.4.3.jar
 |   snowundertrees-1.20.1-1.4.4.jar
@@ -143,7 +143,7 @@ C:.
 |   xercapaint-1.20.1-1.0.0.jar
 |   YungsApi-1.20-Forge-4.0.4.jar
 |   YungsBetterDesertTemples-1.20-Forge-3.0.3.jar
-|   YungsBetterDungeons-1.20-Forge-4.0.3.jar
+|   YungsBetterDungeons-1.20-Forge-4.0.4.jar
 |   YungsBetterEndIsland-1.20-Forge-2.0.6.jar
 |   YungsBetterJungleTemples-1.20-Forge-2.0.4.jar
 |   YungsBetterMineshafts-1.20-Forge-4.0.4.jar
@@ -162,4 +162,4 @@ C:.
     |   
     \---adapter
 Sat 04/20/2024 
-02:46 PM
+07:16 PM
