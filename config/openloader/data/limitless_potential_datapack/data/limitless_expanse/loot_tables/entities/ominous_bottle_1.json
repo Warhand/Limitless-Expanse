@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:potion",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:1,CustomPotionColor:16777215,CustomPotionEffects:[{Ambient:1,Amplifier:0,Duration:36000,Id:31}],display:{Name:'{\"text\":\"Ominous Bottle I\",\"italic\":false}'}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
