@@ -6,10 +6,10 @@
   "item.endrem.rogue_eye.description": "§7§oThis eye peeks through the leaves and whispers in an unknown tongue",
 
   "item.endrem.nether_eye": "Nether Eye",
-  "item.endrem.nether_eye.description": "§7§oThis eye watches fire dance around it",
+  "item.endrem.nether_eye.description": "§7§oThis eye watches fire dance around it from within its citadel",
 
   "item.endrem.cold_eye": "Cold Eye",
-  "item.endrem.cold_eye.description": "§7§oThis eye ",
+  "item.endrem.cold_eye.description": "§7§oThis eye watches over the frigid wastes, ready to strike down intruders",
 
   "item.endrem.magical_eye": "Magical Eye",
   "item.endrem.magical_eye.description": "§7§oThis eye studies ancient tomes from inside its masters study",
@@ -21,16 +21,16 @@
   "item.endrem.lost_eye.description": "§7§oIt gravitates to places that have long since been abandoned",
 
   "item.endrem.wither_eye": "Wither Eye",
-  "item.endrem.wither_eye.description": "§7§oThis eye peers through its minions, hungry to see their victims flesh wither",
+  "item.endrem.wither_eye.description": "§7§oThis eye peers through its minions, hungry for death",
 
   "item.endrem.guardian_eye": "Guardian Eye",
   "item.endrem.guardian_eye.description": "§7§oThis eye has ",
 
   "item.endrem.cursed_eye": "Cursed Eye",
-  "item.endrem.cursed_eye.description": "§7§oA powerful yet destructive artifact; the Piglins swore to protect it at the cost of their lives",
+  "item.endrem.cursed_eye.description": "§7§oThis eye whispers secrets, and convinces its wielder that no outsider can be trusted, no matter how shiny",
 
   "item.endrem.exotic_eye": "Exotic Eye",
-  "item.endrem.exotic_eye.description": "§7§oThose who followed this eye were never seen again; rumors say they found the great city of Atlantis, or lost their way trying",
+  "item.endrem.exotic_eye.description": "§7§oThis eye watches and waits for a kind soul, that cultivates the world around them",
 
   "item.endrem.evil_eye": "Evil Eye",
   "item.endrem.evil_eye.description": "§7§oA holy talisman said to protect its owner from bad luck",
@@ -42,7 +42,7 @@
   "item.endrem.cryptic_eye.description": "§7§o§kThis eye went weeweewee, all the way home!",
 
   "item.endrem.corrupted_eye": "Corrupted Eye",
-  "item.endrem.corrupted_eye.description": "§7§oThis eye has watched its civilization fall to spreading corruption",
+  "item.endrem.corrupted_eye.description": "§7§oThis eye still watches over its long-dead home, while another listens",
 
   "item.endrem.witch_eye": "Witch Eye",
   "item.endrem.witch_eye.description": "§7§oThis eye has brewed vile potions that were lost to time",
