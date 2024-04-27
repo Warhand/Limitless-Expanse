@@ -1,28 +1,34 @@
+import crafttweaker.api.bracket.ForgeBracketDumpers;
+import crafttweaker.api.bracket.ForgeBracketHandlers;
+import crafttweaker.api.bracket.ForgeBracketValidators;
 import crafttweaker.api.entity.EntityType;
 import crafttweaker.api.entity.LivingEntity;
+import crafttweaker.api.entity.Entity;
 import crafttweaker.api.entity.type.player.Player;
 import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.ingredient.type.IIngredientAny;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.ItemCooldowns;
-import crafttweaker.api.util.math.Random;
 import crafttweaker.api.item.ItemDefinition;
-import crafttweaker.api.bracket.ForgeBracketDumpers;
-import crafttweaker.api.bracket.ForgeBracketHandlers;
-import crafttweaker.api.bracket.ForgeBracketValidators;
 import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.util.InteractionHand;
+import crafttweaker.api.util.math.Random;
+import crafttweaker.forge.api.event.DetonateExplosionEvent;
+import crafttweaker.forge.api.event.entity.living.LivingDeathEvent;
+import crafttweaker.forge.api.event.entity.living.LivingEquipmentChangeEvent;
+import crafttweaker.forge.api.event.entity.living.LivingHurtEvent;
 import crafttweaker.forge.api.event.entity.living.LivingUseTotemEvent;
 import crafttweaker.forge.api.event.entity.living.spawn.FinalizeMobSpawnEvent;
-import crafttweaker.forge.api.event.DetonateExplosionEvent;
 import crafttweaker.forge.api.player.interact.RightClickItemEvent;
+import crafttweaker.forge.api.event.interact.LeftClickBlockEvent;
 
 //Hammer rebalance
 
-<item:justhammers:stone_hammer>.maxDamage = 142;
-<item:justhammers:iron_hammer>.maxDamage = 277;
-<item:justhammers:diamond_hammer>.maxDamage = 1731;
-<item:justhammers:netherite_hammer>.maxDamage = 2249;
+<item:justhammers:stone_hammer>.maxDamage = 284;
+<item:justhammers:iron_hammer>.maxDamage = 554;
+<item:justhammers:gold_hammer>.maxDamage = 70;
+<item:justhammers:diamond_hammer>.maxDamage = 3462;
+<item:justhammers:netherite_hammer>.maxDamage = 4498;
 
 //Totem cooldown
 
@@ -107,6 +113,8 @@ events.register<RightClickItemEvent>(event => {
 	}
 });
 
+//process arrow bundles
+
 events.register<RightClickItemEvent>(event => {
 	val itemUsed = event.itemStack;
 	if (event.entity.level.isClientSide) {
@@ -115,5 +123,53 @@ events.register<RightClickItemEvent>(event => {
 	if (itemUsed.withoutTag()).matches(<item:kubejs:arrow_bundle> * itemUsed.amount) {
 		itemUsed.asMutable().shrink();
 		event.entity.give(<item:minecraft:arrow> * 8);
+	}
+});
+
+//cancel bad omen from illagers
+
+events.register<LivingHurtEvent>(event => {
+	val subject = event.entity;
+	val lvl = subject.level;
+	val source = event.source.entity;
+	println("--- livinghurt start");
+	if source != null {
+		if lvl.isClientSide {
+		return;
+		}
+		if source.getType() == <entitytype:minecraft:player> {
+			if subject.getType() == <entitytype:minecraft:pillager> {
+				println("true pillager");
+				if subject.data["Wave"] == 0 {
+					println("true wave");
+					if subject.data["PatrolLeader"] == 1 {
+						println("true leader");
+						subject.updateData({PatrolLeader: 0});
+						subject.updateData({DeathLootTable: "limitless_expanse:entities/ominous_bottle_1"});
+					}
+				}
+			}
+		}
+	}
+	println("--- livinghurt end");
+});
+
+//break hammers
+
+events.register<LeftClickBlockEvent>(event => {
+	val heldItem = event.itemStack;
+	val entity = event.entity;
+	val lvl = entity.level;
+	if lvl.isClientSide {
+		return;
+		}
+	if <tag:items:limitless_expanse:hammers>.contains(heldItem.registryName) {
+		if heldItem.damage >= (heldItem.maxDamage - 1) {
+			println("true");
+			println(event.hand as string);
+			heldItem.asMutable().shrink();
+			entity.playSound(<soundevent:minecraft:entity.item.break>, 1.0, 1.0);
+			entity.playNotifySound(<soundevent:minecraft:entity.item.break>, <constant:minecraft:sound/source:players>, 1.0, 1.0);
+		}
 	}
 });
