@@ -29,8 +29,6 @@ C:.
 |   clienttweaks-forge-1.20-11.1.0.jar
 |   cloth-config-11.1.118-forge.jar
 |   Clumps-forge-1.20.1-12.0.0.3.jar
-|   connectiblechains-2.2.1+1.20.1.jar
-|   Connector-1.0.0-beta.42+1.20.1.jar
 |   Controlling-forge-1.20.1-12.0.2.jar
 |   corpse-forge-1.20.1-1.0.12.jar
 |   CraftTweaker-forge-1.20.1-14.0.38.jar
@@ -59,12 +57,13 @@ C:.
 |   everycomp-1.20-2.6.52.jar
 |   experimentalsettingsdisabler-1.20.1-3.0.jar
 |   explorify-v1.3.0-mc1.20.jar
-|   fabric-api-0.92.1+1.11.8+1.20.1.jar
 |   fancymenu_forge_3.1.5_MC_1.20.1.jar
 |   FarmersDelight-1.20.1-1.2.4.jar
 |   Fastload-Reforged-mc1.20.1-3.4.0.jar
 |   ferritecore-6.0.1-forge.jar
 |   flickerfix-1.20.1-4.0.1.jar
+|   formations-1.0.2-forge-mc1.20.jar
+|   formationsnether-1.0.3.jar
 |   friendsandfoes-forge-mc1.20.1-2.0.10.jar
 |   Galosphere-1.20.1-1.4.1-Forge.jar
 |   geckolib-forge-1.20.1-4.4.4.jar
@@ -161,5 +160,5 @@ C:.
     |   connectiblechains-2.2.1+1.20.1_mapped_srg_1.20.1.jar.input
     |   
     \---adapter
-Sat 04/20/2024 
-07:16 PM
+Sat 04/27/2024 
+01:12 PM
