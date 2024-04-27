@@ -32,40 +32,68 @@ val wooden_slabs = <tag:items:minecraft:wooden_slabs>;
 val glass = <item:minecraft:glass>;
 val silver = <item:galosphere:silver_ingot>;
 val redstone = <item:minecraft:redstone>;
-val mesh = <item:kubejs:string_mesh>;
 val dust_ash = <item:supplementaries:ash>;
 val arrow = <item:minecraft:arrow>;
 val arrow_bundle = <item:kubejs:arrow_bundle>;
 val nether_ingot = <item:minecraft:netherite_ingot>;
 val scale = <item:quark:dragon_scale>;
+val unusual_dust = <item:illagerinvasion:unusual_dust>;
+val illusion_dust = <item:illagerinvasion:illusionary_dust>;
+val emerald = <tag:items:forge:gems/emerald>;
+val copper_ingot = <item:minecraft:copper_ingot>;
+val packed_mud = <item:minecraft:packed_mud>;
+val mud = <item:minecraft:mud>;
+val straw = <item:farmersdelight:straw>;
 
 //Recipe additions
 
+craftingTable.addShapeless("packed_mud", packed_mud, [straw, mud]);
+
+craftingTable.addShapeless("farmer_twine", twine * 2, [straw, straw]);
+
+craftingTable.addShaped("copper_rail", <item:modernminecarts:copper_rail> * 6, [
+	[copper_ingot, empty, copper_ingot], 
+	[copper_ingot, stick, copper_ingot], 
+	[copper_ingot, redstone, copper_ingot]]);
+
 craftingTable.addShaped("sack_recipe", <item:supplementaries:sack>, [
-		[canvas, twine, canvas],
-		[canvas, empty, canvas],
-		[canvas, canvas, canvas]
-	]);
-	
+	[canvas, twine, canvas],
+	[canvas, empty, canvas],
+	[canvas, canvas, canvas]]);
+
 craftingTable.addShaped("bundle_recipe", <item:minecraft:bundle>, [
-		[leather, twine, leather],
-		[leather, empty, leather],
-		[leather, leather, leather]
-	]);
-	
+	[leather, twine, leather],
+	[leather, empty, leather],
+	[leather, leather, leather]]);
+
 craftingTable.addShapeless("salt_straw_to_shard", <item:galosphere:pink_salt_shard>, [<item:galosphere:pink_salt_straw>]);
 
-craftingTable.addShaped("twine_to_rope", rope * 3, [[empty, empty, twine],[empty, comb, empty],[twine, empty, empty]]);
+craftingTable.addShaped("twine_to_rope", rope * 3, [
+	[empty, empty, twine],
+	[empty, comb, empty],
+	[twine, empty, empty]]);
 
-craftingTable.addShaped("twine_to_lead", lead * 2, [[twine, twine, empty],[twine, slime, empty],[empty, empty, twine]]);
+craftingTable.addShaped("twine_to_lead", lead * 2, [
+	[twine, twine, empty],
+	[twine, slime, empty],
+	[empty, empty, twine]]);
 
-craftingTable.addShaped("silver_daylight_sensor", daylight, [[glass, glass, glass],[silver, silver, silver],[wooden_slabs, wooden_slabs, wooden_slabs]]);
+craftingTable.addShaped("silver_daylight_sensor", daylight, [
+	[glass, glass, glass],
+	[silver, silver, silver],
+	[wooden_slabs, wooden_slabs, wooden_slabs]]);
 
-craftingTable.addShaped("silver_relayer", <item:supplementaries:relayer>, [[cobble, cobble, cobble], [redstone, redstone, silver], [cobble, cobble, cobble]]);
-
-craftingTable.addShaped("string_mesh", mesh, [[empty, stringItem, empty],[stringItem, empty, stringItem],[empty, stringItem, empty]]);
+craftingTable.addShaped("silver_relayer", <item:supplementaries:relayer>, [
+	[cobble, cobble, cobble], 
+	[redstone, redstone, silver], 
+	[cobble, cobble, cobble]]);
 
 craftingTable.addShapeless("arrow_bundle", arrow_bundle, [arrow, arrow, arrow, arrow, twine, arrow, arrow, arrow, arrow]);
+
+craftingTable.addShaped("custom_hallowed_gem", <item:illagerinvasion:hallowed_gem>, [
+	[ingot_gold, unusual_dust, ingot_gold],
+	[illusion_dust, emerald, illusion_dust],
+	[ingot_gold, unusual_dust, ingot_gold]]);
 
 	//hammer recipes
 	
