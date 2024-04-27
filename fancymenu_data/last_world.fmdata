@@ -2,6 +2,6 @@ type = last_world
 
 last_world {
   is_server = false
-  world = C:/Users/micha/AppData/Roaming/com.modrinth.theseus/profiles/Limitless Expanse/saves/Testing world
+  world = C:/Users/micha/AppData/Roaming/.modrinth/profiles/Limitless Expanse/saves/gm_construct 13
 }
 

@@ -44,6 +44,8 @@
 		#This setting might not be respected when not enough screen space is available. To force this setting disable "allow_fallback".
 		#Allowed Values: NONE, GUI_SMALL, GUI_COMPACT, INVENTORY_COMPACT, INVENTORY_FULL_SIZE
 		renderer_type = "GUI_COMPACT"
+		#Prevent status effects with infinite duration from showing.
+		hide_infinite_effects = false
 
 	[renderers.gui_renderer]
 		#Respect vanilla's "hideParticles" flag which prevents a status effect from showing when set via commands.
@@ -81,13 +83,12 @@
 		#Custom scale for effect renderer.
 		#Range: 1.0 ~ 12.0
 		scale = 4.0
+		#Prevent status effects with infinite duration from showing.
+		hide_infinite_effects = false
 
 [widgets]
 
 	[widgets.inventory_compact]
-		#Display string to be used for an effect duration that is too long to show.
-		#Allowed Values: INFINITY, ASTERISKS, NONE
-		long_duration = "INFINITY"
 		#Effect amplifier color. Setting this to "EFFECT" will use potion color.
 		#Effect amplifier color. Setting this to "EFFECT" will use potion color.
 		#Allowed Values: EFFECT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
@@ -109,6 +110,8 @@
 		#Effect duration color. Setting this to "EFFECT" will use potion color.
 		#Allowed Values: EFFECT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
 		duration_color = "GRAY"
+		#Hide infinite symbol shown for an effect duration that is too long to fit.
+		hide_infinite_duration = false
 
 	[widgets.inventory_full_size]
 		#Should the effect icon start to blink when the effect is running out.
@@ -129,9 +132,6 @@
 		duration_color = "GRAY"
 
 	[widgets.gui_small]
-		#Display string to be used for an effect duration that is too long to show.
-		#Allowed Values: INFINITY, ASTERISKS, NONE
-		long_duration = "INFINITY"
 		#Effect amplifier color. Setting this to "EFFECT" will use potion color.
 		#Effect amplifier color. Setting this to "EFFECT" will use potion color.
 		#Allowed Values: EFFECT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
@@ -153,11 +153,10 @@
 		#Effect duration color. Setting this to "EFFECT" will use potion color.
 		#Allowed Values: EFFECT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
 		duration_color = "GRAY"
+		#Hide infinite symbol shown for an effect duration that is too long to fit.
+		hide_infinite_duration = false
 
 	[widgets.gui_compact]
-		#Display string to be used for an effect duration that is too long to show.
-		#Allowed Values: INFINITY, ASTERISKS, NONE
-		long_duration = "INFINITY"
 		#Effect amplifier color. Setting this to "EFFECT" will use potion color.
 		#Effect amplifier color. Setting this to "EFFECT" will use potion color.
 		#Allowed Values: EFFECT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
@@ -181,4 +180,6 @@
 		#Effect duration color. Setting this to "EFFECT" will use potion color.
 		#Allowed Values: EFFECT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
 		duration_color = "GRAY"
+		#Hide infinite symbol shown for an effect duration that is too long to fit.
+		hide_infinite_duration = false
 
