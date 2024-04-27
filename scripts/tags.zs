@@ -60,7 +60,7 @@ val escaped = [
 ];
 
 for entity in escaped {
-	<tag:entity_types:supplementaries:jar_catchable>.remove(entity);
+	<tag:entity_types:supplementaries:cage_catchable>.remove(entity);
 }
 
 <tag:entity_types:supplementaries:jar_baby_catchable>.remove(<entitytype:minecraft:rabbit>);
@@ -119,4 +119,18 @@ val baby_dont_hurt_me = [
 
 for entity in baby_dont_hurt_me {
 	<tag:entity_types:supplementaries:cage_baby_catchable>.add(entity);
+}
+
+//add hammers to hammers tag
+
+val hammers = [
+	<item:justhammers:stone_hammer>,
+	<item:justhammers:iron_hammer>,
+	<item:justhammers:gold_hammer>,
+	<item:justhammers:diamond_hammer>,
+	<item:justhammers:netherite_hammer>
+];
+
+for item in hammers {
+	<tag:items:limitless_expanse:hammers>.add(item);
 }
