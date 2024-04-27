@@ -9,3 +9,5 @@
 3. This pack includes the property modifier mod by [IchHabeHunger54](https://www.curseforge.com/members/ichhabehunger54/projects). This mod is not on modrinth, but is able to be used in the pack due to the MIT license used by the projects. (The project on curseforge uses ARR as this is the default project license, but the github source says the project uses MIT.)
    - Source: https://www.curseforge.com/minecraft/mc-mods/property-modifier
    - Github: https://github.com/IchHabeHunger54/PropertyModifier
+3. This pack includes the Modern Minecarts mode by [lordkipama](https://www.curseforge.com/members/lordkipama/projects). This mod is not on modrinth, but is able to be used in the pack due to the Creative Commons license used by the project.
+   - Source: https://www.curseforge.com/minecraft/mc-mods/modernminecarts
