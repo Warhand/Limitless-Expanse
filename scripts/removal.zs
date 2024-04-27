@@ -14,13 +14,19 @@ craftingTable.removeByModid("justhammers");
 
 furnace.removeByRegex("quark.tweaks.smelting.raw_.*");
 
+smithing.remove(<item:modernminecarts:copper_rail>);
+
 val removeCrafting as IIngredient[] = [
 	<item:supplementaries:sack>,
 	<item:supplementaries:rope>,
 	<item:minecraft:lead>,
 	<item:minecraft:daylight_detector>,
 	<item:enchantinginfuser:enchanting_infuser>,
-	<item:enchantinginfuser:advanced_enchanting_infuser>
+	<item:enchantinginfuser:advanced_enchanting_infuser>,
+	<item:illagerinvasion:hallowed_gem>,
+	<item:supplementaries:relayer>,
+	<item:minecraft:packed_mud>,
+	<item:farmersdelight:rope>
 ];
 
 for item in removeCrafting{
@@ -78,7 +84,10 @@ val trash as IIngredient[] = [
 	<item:friendsandfoes:totem_of_freezing>,
 	<item:shieldexp:paragon_shield>,
 	<item:shieldexp:griefer_shield>,
-	<item:minecraft:shield>
+	<item:minecraft:shield>,
+	<item:endrem:witch_pupil>,
+	<item:endrem:undead_soul>,
+	<item:quark:backpack>
 ];
 
 for item in trash{
@@ -92,7 +101,13 @@ for item in trash{
 }
 
 loot.modifiers.register(
-  "removing_various_curios_from_chests",
+  "removing_trash_from_chests",
   LootConditions.only(LootTableIdRegexLootCondition.create(".*chests/.*")),
+  CommonLootModifiers.removeAll(trash)
+);
+
+loot.modifiers.register(
+  "removing_trash_from_entities",
+  LootConditions.only(LootTableIdRegexLootCondition.create(".*entities/.*")),
   CommonLootModifiers.removeAll(trash)
 );
