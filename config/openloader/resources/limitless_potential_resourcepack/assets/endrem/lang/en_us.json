@@ -1,51 +1,51 @@
 {
   "item.endrem.old_eye": "Old Eye",
-  "item.endrem.old_eye.description": "§7§oThis eye remembers harsh sunlight, and is still warm to the touch",
+  "item.endrem.old_eye.description": "§7§oThis eye remembers harsh sunlight.",
 
   "item.endrem.rogue_eye": "Rogue Eye",
-  "item.endrem.rogue_eye.description": "§7§oThis eye peeks through the leaves and whispers in an unknown tongue",
+  "item.endrem.rogue_eye.description": "§7§oThis eye peeks through the leaves.",
 
   "item.endrem.nether_eye": "Nether Eye",
-  "item.endrem.nether_eye.description": "§7§oThis eye watches fire dance around it from within its citadel",
+  "item.endrem.nether_eye.description": "§7§oThis eye dances in wild flame",
 
   "item.endrem.cold_eye": "Cold Eye",
-  "item.endrem.cold_eye.description": "§7§oThis eye watches over the frigid wastes, ready to strike down intruders",
+  "item.endrem.cold_eye.description": "§7§oThis eye watches over the frigid wastes",
 
   "item.endrem.magical_eye": "Magical Eye",
-  "item.endrem.magical_eye.description": "§7§oThis eye studies ancient tomes from inside its masters study",
+  "item.endrem.magical_eye.description": "§7§oThis eye studies ancient tomes",
 
   "item.endrem.black_eye": "Black Eye",
-  "item.endrem.black_eye.description": "§7§oThis eye watched the sky disappear behind shovelfuls of sand",
+  "item.endrem.black_eye.description": "§7§oThis eye was sealed ",
 
   "item.endrem.lost_eye": "Lost Eye",
-  "item.endrem.lost_eye.description": "§7§oIt gravitates to places that have long since been abandoned",
+  "item.endrem.lost_eye.description": "§7§oThis eye guards abandoned places",
 
   "item.endrem.wither_eye": "Wither Eye",
-  "item.endrem.wither_eye.description": "§7§oThis eye peers through its minions, hungry for death",
+  "item.endrem.wither_eye.description": "§7§oThis eye hungers for death and decay",
 
   "item.endrem.guardian_eye": "Guardian Eye",
-  "item.endrem.guardian_eye.description": "§7§oThis eye has ",
+  "item.endrem.guardian_eye.description": "§7§oThis eye carries the elders power",
 
   "item.endrem.cursed_eye": "Cursed Eye",
-  "item.endrem.cursed_eye.description": "§7§oThis eye whispers secrets, and convinces its wielder that no outsider can be trusted, no matter how shiny",
+  "item.endrem.cursed_eye.description": "§7§oThis eye distrusts outsiders",
 
   "item.endrem.exotic_eye": "Exotic Eye",
-  "item.endrem.exotic_eye.description": "§7§oThis eye watches and waits for a kind soul, that cultivates the world around them",
+  "item.endrem.exotic_eye.description": "§7§oThis eye wanders from lands unknown",
 
   "item.endrem.evil_eye": "Evil Eye",
-  "item.endrem.evil_eye.description": "§7§oA holy talisman said to protect its owner from bad luck",
+  "item.endrem.evil_eye.description": "§7§oThis eye ",
 
   "item.endrem.undead_eye": "Undead Eye",
-  "item.endrem.undead_eye.description": "§7§oThis eye has seen ages pass around it, as its body remained preserved",
+  "item.endrem.undead_eye.description": "§7§oThis eye remains perfectly preserved",
 
   "item.endrem.cryptic_eye": "Cryptic Eye",
   "item.endrem.cryptic_eye.description": "§7§o§kThis eye went weeweewee, all the way home!",
 
   "item.endrem.corrupted_eye": "Corrupted Eye",
-  "item.endrem.corrupted_eye.description": "§7§oThis eye still watches over its long-dead home, while another listens",
+  "item.endrem.corrupted_eye.description": "§7§oThis eye watches, while another listens",
 
   "item.endrem.witch_eye": "Witch Eye",
-  "item.endrem.witch_eye.description": "§7§oThis eye has brewed vile potions that were lost to time",
+  "item.endrem.witch_eye.description": "§7§oThis eye devises vile potions",
   "item.endrem.witch_pupil": "Witch Pupil",
 
   "item.endrem.undead_soul": "Undead Soul",
@@ -79,7 +79,7 @@
   "advancements.main.cold_eye.title": "A Nice-y Look",
   "advancements.main.cold_eye.description": "Get Your First Cold Eye",
 
-  "advancements.main.corrupted_eye.title": "Cover Me In Emeralds", "%%%%%%Comment%%%%%%": "Golden Shower fits better but whatever...",
+  "advancements.main.corrupted_eye.title": "Oh so lonely...", "%%%%%%Comment%%%%%%": "Golden Shower fits better but whatever...",
   "advancements.main.corrupted_eye.description": "Get Your First Corrupted Eye",
 
   "advancements.main.magical_eye.title": "Fallen Sorcerer",
@@ -97,7 +97,7 @@
   "advancements.main.guardian_eye.title": "Who's Guarding The Temple Now?",
   "advancements.main.guardian_eye.description": "Get Your First Guardian Eye",
 
-  "advancements.main.cursed_eye.title": "A New Protector...",
+  "advancements.main.cursed_eye.title": "Such vicious brutes!",
   "advancements.main.cursed_eye.description": "Get Your First Cursed Eye",
 
   "advancements.main.witch_eye.title": "Trick-or-Treat?",
