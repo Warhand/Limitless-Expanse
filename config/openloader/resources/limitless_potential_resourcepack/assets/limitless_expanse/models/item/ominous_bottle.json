@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "limitless_expanse:item/ominous_bottle"
+    }
+  }
