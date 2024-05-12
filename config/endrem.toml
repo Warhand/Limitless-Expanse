@@ -1,13 +1,13 @@
 
 [endrem]
 	#Toggle Ender Eyes Actions (Throwing to Locate The Stronghold)
-	throw_ender_eye = false
+	throw_ender_eye = true
 	#Toggle Ender Eyes Actions (Placing in Portal Frames)
 	use_ender_eye = false
 	#Determines whether or not vanilla eyes can naturally generate within the frames of the portal
 	frame_has_eye = false
 	#Determines the percentage chance of eyes breaking when thrown
-	eye_break_chance = 10
+	eye_break_chance = 0
 	#Determines whether or not players can remove ender eyes from the portal frames
 	can_remove_eye = false
 	#Determines if it's possible to obtain the cryptic eye when enchanting
