@@ -1,11 +1,11 @@
+import crafttweaker.api.data.IData;
 import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.ingredient.type.IIngredientAny;
 import crafttweaker.api.ingredient.type.IIngredientEmpty;
-import crafttweaker.api.data.IData;
+import crafttweaker.api.item.alchemy.Potion;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.recipe.SmithingRecipeManager;
 import crafttweaker.api.tag.MCTag;
-import crafttweaker.api.item.alchemy.Potion;
 
 val block_diamond = <item:minecraft:diamond_block>;
 val block_gold = <tag:items:forge:storage_blocks/gold>;
@@ -96,89 +96,68 @@ craftingTable.addShaped("custom_hallowed_gem", <item:illagerinvasion:hallowed_ge
 	[ingot_gold, unusual_dust, ingot_gold]]);
 
 	//hammer recipes
-	
-	craftingTable.addShaped("stone_hammer", <item:justhammers:stone_hammer>, [
-			[cobble, sturdy, cobble],
-			[empty, stick, empty],
-			[empty, stick, empty]
-		]);
-		
-	craftingTable.addShaped("iron_hammer", <item:justhammers:iron_hammer>, [
-			[ingot_iron, block_iron, ingot_iron],
-			[empty, stick, empty],
-			[empty, stick, empty]
-		]);
-		
-	craftingTable.addShaped("gold_hammer", <item:justhammers:gold_hammer>, [
-			[ingot_gold, block_gold, ingot_gold],
-			[empty, stick, empty],
-			[empty, stick, empty]
-		]);
-		
-	craftingTable.addShaped("diamond_hammer", <item:justhammers:diamond_hammer>, [
-			[ingot_diamond, block_diamond, ingot_diamond],
-			[empty, stick, empty],
-			[empty, stick, empty]
-		]);
-		
-	smithing.addTransformRecipe("netherite_hammer", <item:justhammers:netherite_hammer>, template, <item:justhammers:diamond_hammer>, block_netherite);
-	
+
+	smithing.addTransformRecipe("stone_hammer", <item:justhammers:stone_hammer>, <item:kubejs:hammer_smithing_template>, <item:minecraft:stone_pickaxe>, sturdy);
+	smithing.addTransformRecipe("iron_hammer", <item:justhammers:iron_hammer>, <item:kubejs:hammer_smithing_template>, <item:minecraft:iron_pickaxe>, block_iron);
+	smithing.addTransformRecipe("gold_hammer", <item:justhammers:gold_hammer>, <item:kubejs:hammer_smithing_template>, <item:minecraft:golden_pickaxe>, block_gold);
+	smithing.addTransformRecipe("diamond_hammer", <item:justhammers:diamond_hammer>, <item:kubejs:hammer_smithing_template>, <item:minecraft:diamond_pickaxe>, block_diamond);
+	smithing.addTransformRecipe("netherite_hammer", <item:justhammers:netherite_hammer>, <item:minecraft:netherite_upgrade_smithing_template>, <item:justhammers:diamond_hammer>, <item:minecraft:netherite_ingot>);
 	
 //Fletching tipped arrows
 
 val potions = [
-	<potion:minecraft:night_vision>,
-	<potion:minecraft:long_night_vision>,
-	<potion:minecraft:invisibility>,
-	<potion:minecraft:long_invisibility>,
-	<potion:minecraft:leaping>,
-	<potion:minecraft:long_leaping>,
-	<potion:minecraft:strong_leaping>,
-	<potion:minecraft:fire_resistance>,
-	<potion:minecraft:long_fire_resistance>,
-	<potion:minecraft:swiftness>,
-	<potion:minecraft:long_swiftness>,
-	<potion:minecraft:strong_swiftness>,
-	<potion:minecraft:slowness>,
-	<potion:minecraft:long_slowness>,
-	<potion:minecraft:strong_slowness>,
-	<potion:minecraft:turtle_master>,
-	<potion:minecraft:long_turtle_master>,
-	<potion:minecraft:strong_turtle_master>,
-	<potion:minecraft:water_breathing>,
-	<potion:minecraft:long_water_breathing>,
-	<potion:minecraft:healing>,
-	<potion:minecraft:strong_healing>,
-	<potion:minecraft:harming>,
-	<potion:minecraft:strong_harming>,
-	<potion:minecraft:poison>,
-	<potion:minecraft:long_poison>,
-	<potion:minecraft:strong_poison>,
-	<potion:minecraft:regeneration>,
-	<potion:minecraft:long_regeneration>,
-	<potion:minecraft:strong_regeneration>,
-	<potion:minecraft:strength>,
-	<potion:minecraft:long_strength>,
-	<potion:minecraft:strong_strength>,
-	<potion:minecraft:weakness>,
-	<potion:minecraft:long_weakness>,
-	<potion:minecraft:luck>,
-	<potion:minecraft:slow_falling>,
-	<potion:minecraft:long_slow_falling>,
-	<potion:enderzoology:displacement>,
-	<potion:enderzoology:strong_displacement>,
 	<potion:enderzoology:decay>,
+	<potion:enderzoology:displacement>,
 	<potion:enderzoology:long_decay>,
-	<potion:enderzoology:strong_decay>,
-	<potion:enderzoology:rising>,
 	<potion:enderzoology:long_rising>,
+	<potion:enderzoology:rising>,
+	<potion:enderzoology:strong_decay>,
+	<potion:enderzoology:strong_displacement>,
+	<potion:galosphere:astral>,
+	<potion:galosphere:long_astral>,
 	<potion:illagerinvasion:berserking>,
 	<potion:illagerinvasion:long_berserking>,
 	<potion:illagerinvasion:strong_berserking>,
-	<potion:galosphere:astral>,
-	<potion:galosphere:long_astral>,
-	<potion:quark:resilience>,
+	<potion:minecraft:fire_resistance>,
+	<potion:minecraft:harming>,
+	<potion:minecraft:healing>,
+	<potion:minecraft:invisibility>,
+	<potion:minecraft:leaping>,
+	<potion:minecraft:long_fire_resistance>,
+	<potion:minecraft:long_invisibility>,
+	<potion:minecraft:long_leaping>,
+	<potion:minecraft:long_night_vision>,
+	<potion:minecraft:long_poison>,
+	<potion:minecraft:long_regeneration>,
+	<potion:minecraft:long_slow_falling>,
+	<potion:minecraft:long_slowness>,
+	<potion:minecraft:long_strength>,
+	<potion:minecraft:long_swiftness>,
+	<potion:minecraft:long_turtle_master>,
+	<potion:minecraft:long_water_breathing>,
+	<potion:minecraft:long_weakness>,
+	<potion:minecraft:luck>,
+	<potion:minecraft:night_vision>,
+	<potion:minecraft:poison>,
+	<potion:minecraft:regeneration>,
+	<potion:minecraft:slow_falling>,
+	<potion:minecraft:slowness>,
+	<potion:minecraft:strength>,
+	<potion:minecraft:strong_harming>,
+	<potion:minecraft:strong_healing>,
+	<potion:minecraft:strong_leaping>,
+	<potion:minecraft:strong_poison>,
+	<potion:minecraft:strong_regeneration>,
+	<potion:minecraft:strong_slowness>,
+	<potion:minecraft:strong_strength>,
+	<potion:minecraft:strong_swiftness>,
+	<potion:minecraft:strong_turtle_master>,
+	<potion:minecraft:swiftness>,
+	<potion:minecraft:turtle_master>,
+	<potion:minecraft:water_breathing>,
+	<potion:minecraft:weakness>,
 	<potion:quark:long_resilience>,
+	<potion:quark:resilience>,
 	<potion:quark:strong_resilience>
 ];
 
