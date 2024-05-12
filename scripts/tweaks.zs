@@ -1,9 +1,9 @@
 import crafttweaker.api.bracket.ForgeBracketDumpers;
 import crafttweaker.api.bracket.ForgeBracketHandlers;
 import crafttweaker.api.bracket.ForgeBracketValidators;
+import crafttweaker.api.entity.Entity;
 import crafttweaker.api.entity.EntityType;
 import crafttweaker.api.entity.LivingEntity;
-import crafttweaker.api.entity.Entity;
 import crafttweaker.api.entity.type.player.Player;
 import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.ingredient.type.IIngredientAny;
@@ -11,24 +11,26 @@ import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.ItemCooldowns;
 import crafttweaker.api.item.ItemDefinition;
 import crafttweaker.api.tag.MCTag;
+import crafttweaker.api.text.Component;
 import crafttweaker.api.util.InteractionHand;
 import crafttweaker.api.util.math.Random;
+import crafttweaker.api.villagers.VillagerTrades;
 import crafttweaker.forge.api.event.DetonateExplosionEvent;
 import crafttweaker.forge.api.event.entity.living.LivingDeathEvent;
 import crafttweaker.forge.api.event.entity.living.LivingEquipmentChangeEvent;
 import crafttweaker.forge.api.event.entity.living.LivingHurtEvent;
 import crafttweaker.forge.api.event.entity.living.LivingUseTotemEvent;
 import crafttweaker.forge.api.event.entity.living.spawn.FinalizeMobSpawnEvent;
-import crafttweaker.forge.api.player.interact.RightClickItemEvent;
 import crafttweaker.forge.api.event.interact.LeftClickBlockEvent;
+import crafttweaker.forge.api.player.interact.RightClickItemEvent;
 
 //Hammer rebalance
 
-<item:justhammers:stone_hammer>.maxDamage = 284;
+<item:justhammers:stone_hammer>.maxDamage = 432;
 <item:justhammers:iron_hammer>.maxDamage = 554;
-<item:justhammers:gold_hammer>.maxDamage = 70;
-<item:justhammers:diamond_hammer>.maxDamage = 3462;
-<item:justhammers:netherite_hammer>.maxDamage = 4498;
+<item:justhammers:gold_hammer>.maxDamage = 74;
+<item:justhammers:diamond_hammer>.maxDamage = 3436;
+<item:justhammers:netherite_hammer>.maxDamage = 4468;
 
 //Totem cooldown
 
@@ -173,3 +175,12 @@ events.register<LeftClickBlockEvent>(event => {
 		}
 	}
 });
+
+//Adding smithing template tooltip to custom hammer upgrade
+
+<item:kubejs:hammer_smithing_template>.addTooltip(Component.translatable("upgrade.kubejs.hammer_upgrade").withStyle(<constant:minecraft:formatting:gray>));
+<item:kubejs:hammer_smithing_template>.addTooltip("");
+<item:kubejs:hammer_smithing_template>.addTooltip(Component.translatable("item.minecraft.smithing_template.applies_to").withStyle(<constant:minecraft:formatting:gray>));
+<item:kubejs:hammer_smithing_template>.addTooltip(Component.translatable("item.kubejs.smithing_template.hammer_upgrade.applies_to").withStyle(<constant:minecraft:formatting:blue>));
+<item:kubejs:hammer_smithing_template>.addTooltip(Component.translatable("item.minecraft.smithing_template.ingredients").withStyle(<constant:minecraft:formatting:gray>));
+<item:kubejs:hammer_smithing_template>.addTooltip(Component.translatable("item.kubejs.smithing_template.hammer_upgrade.ingredients").withStyle(<constant:minecraft:formatting:blue>));
