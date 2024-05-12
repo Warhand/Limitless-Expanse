@@ -10,4 +10,3 @@ public function description(m as JeiIngredient, s as string) as void {
 }
 
 description(<item:farmersdelight:straw>, "A material that can be harvested from grass.");
-description(<item:betterarcheology:unidentified_artifact>, "A curious item, that must be studied before it can be identified");
