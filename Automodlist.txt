@@ -13,7 +13,6 @@ C:.
 |   AttributeFix-Forge-1.20.1-21.0.4.jar
 |   balm-forge-1.20.1-7.2.2.jar
 |   BetterAdvancements-1.20.1-0.3.2.162.jar
-|   betterarcheology-1.1.8-1.20.1.jar
 |   BetterModsButton-v8.0.2-1.20.1-Forge.jar
 |   BetterTridents-v8.0.1-1.20.1-Forge.jar
 |   blueprint-1.20.1-7.0.3.jar
@@ -44,6 +43,7 @@ C:.
 |   durabilitytooltip-1.1.5-forge-mc1.20.jar
 |   EasyAnvils-v8.0.2-1.20.1-Forge.jar
 |   EasyMagic-v8.0.1-1.20.1-Forge.jar
+|   EasyShulkerBoxes-v8.0.2-1.20.1-Forge.jar
 |   EchoChest-v8.0.0-1.20.1-Forge.jar
 |   EffectDescriptions-v8.0.2-1.20.1-Forge.jar
 |   elytraslot-forge-6.3.0+1.20.1.jar
@@ -109,6 +109,7 @@ C:.
 |   prometheus-forge-1.20.1-1.2.5.jar
 |   propertymodifier-1.20.1-0.1-all.jar
 |   PuzzlesLib-v8.1.18-1.20.1-Forge.jar
+|   Quad-1.2.1+1.20.4-Forge.jar
 |   Quark-4.0-441.jar
 |   QuarkOddities-1.20.1.jar
 |   reimagined-trims-1.0.3.jar
@@ -133,6 +134,7 @@ C:.
 |   supermartijn642configlib-1.1.8-forge-mc1.20.jar
 |   supplementaries-1.20-2.8.10.jar
 |   tectonic-forge-1.19.3-2.3.4.jar
+|   tlc_forge-1.0.3-R-1.20.X.jar
 |   TreeChop-1.20.1-forge-0.19.0.jar
 |   trulytreasures-1.20-3.0.0-forge.jar
 |   veinmining-forge-1.4.0+1.20.1.jar
@@ -148,7 +150,6 @@ C:.
 |   YungsBetterMineshafts-1.20-Forge-4.0.4.jar
 |   YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar
 |   YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar
-|   YungsBetterStrongholds-1.20-Forge-4.0.3.jar
 |   YungsBetterWitchHuts-1.20-Forge-3.0.3.jar
 |   YungsBridges-1.20-Forge-4.0.3.jar
 |   YungsExtras-1.20-Forge-4.0.3.jar
@@ -156,9 +157,5 @@ C:.
 |   Zeta-1.0-16.jar
 |   
 \---.connector
-    |   connectiblechains-2.2.1+1.20.1_mapped_srg_1.20.1.jar
-    |   connectiblechains-2.2.1+1.20.1_mapped_srg_1.20.1.jar.input
-    |   
-    \---adapter
-Sat 04/27/2024 
-01:12 PM
+Wed 05/08/2024 
+06:38 AM
