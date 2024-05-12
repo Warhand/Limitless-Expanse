@@ -8,6 +8,10 @@ import crafttweaker.api.loot.condition.LootTableIdRegexLootCondition;
 import crafttweaker.api.loot.modifier.CommonLootModifiers;
 import crafttweaker.api.tag.MCTag;
 
+//trade removal
+
+villagerTrades.removeWanderingTrade(2, <item:minecraft:beacon>);
+
 //Recipe removals
 
 craftingTable.removeByModid("justhammers");
@@ -17,16 +21,16 @@ furnace.removeByRegex("quark.tweaks.smelting.raw_.*");
 smithing.remove(<item:modernminecarts:copper_rail>);
 
 val removeCrafting as IIngredient[] = [
-	<item:supplementaries:sack>,
-	<item:supplementaries:rope>,
-	<item:minecraft:lead>,
-	<item:minecraft:daylight_detector>,
-	<item:enchantinginfuser:enchanting_infuser>,
 	<item:enchantinginfuser:advanced_enchanting_infuser>,
+	<item:enchantinginfuser:enchanting_infuser>,
+	<item:farmersdelight:rope>,
 	<item:illagerinvasion:hallowed_gem>,
-	<item:supplementaries:relayer>,
+	<item:minecraft:daylight_detector>,
+	<item:minecraft:lead>,
 	<item:minecraft:packed_mud>,
-	<item:farmersdelight:rope>
+	<item:supplementaries:relayer>,
+	<item:supplementaries:rope>,
+	<item:supplementaries:sack>
 ];
 
 for item in removeCrafting{
@@ -58,16 +62,16 @@ val jei_removal as IItemStack[] = [
 	<item:justhammers:stone_impact_hammer>,
 	<item:justhammers:stone_reinforced_hammer>,
 	<item:justhammers:stone_reinforced_impact_hammer>,
-	<item:supplementaries:bomb>,
-	<item:supplementaries:bomb_blue>,
 	<item:supplementaries:bomb_blue_projectile>,
+	<item:supplementaries:bomb_blue>,
 	<item:supplementaries:bomb_projectile>,
-	<item:supplementaries:bomb_spiky>,
 	<item:supplementaries:bomb_spiky_projectile>,
+	<item:supplementaries:bomb_spiky>,
+	<item:supplementaries:bomb>,
+	<item:supplementaries:flax_block>,
 	<item:supplementaries:flax_seeds>,
 	<item:supplementaries:flax>,
-	<item:supplementaries:wild_flax>,
-	<item:supplementaries:flax_block>
+	<item:supplementaries:wild_flax>
 ];
 
 for item in jei_removal{
@@ -75,19 +79,26 @@ for item in jei_removal{
 }
 
 val trash as IIngredient[] = [
-	<item:illagerinvasion:imbuing_table>,
-	<item:quark:rope>,
 	<item:enderzoology:concussion_charge>,
 	<item:enderzoology:confusing_charge>,
 	<item:enderzoology:confusing_powder>,
-	<item:friendsandfoes:totem_of_illusion>,
-	<item:friendsandfoes:totem_of_freezing>,
-	<item:shieldexp:paragon_shield>,
-	<item:shieldexp:griefer_shield>,
-	<item:minecraft:shield>,
-	<item:endrem:witch_pupil>,
 	<item:endrem:undead_soul>,
-	<item:quark:backpack>
+	<item:endrem:witch_pupil>,
+	<item:farmersdelight:fried_egg>,
+	<item:friendsandfoes:totem_of_freezing>,
+	<item:friendsandfoes:totem_of_illusion>,
+	<item:illagerinvasion:imbuing_table>,
+	<item:illagerinvasion:lost_candle>,
+	<item:minecraft:shield>,
+	<item:modernminecarts:chipped_copper_upgrade_smithing_template>,
+	<item:modernminecarts:copper_upgrade_smithing_template>,
+	<item:modernminecarts:damaged_copper_upgrade_smithing_template>,
+	<item:quark:backpack>,
+	<item:quark:rope>,
+	<item:shieldexp:griefer_shield>,
+	<item:shieldexp:paragon_shield>,
+	<item:apotheosis:diamond_mining_arrow>,
+	<item:apotheosis:iron_mining_arrow>
 ];
 
 for item in trash{
