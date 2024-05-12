@@ -1,0 +1,9 @@
+{
+    "item.kubejs.inert_totem": "Inert Totem",
+    "item.kubejs.hammer_smithing_template": "Smithing Template",
+    "item.kubejs.arrow_bundle": "Arrow Bundle",
+
+    "upgrade.kubejs.hammer_upgrade": "Hammer Upgrade",
+    "item.kubejs.smithing_template.hammer_upgrade.applies_to": " Pickaxes",
+    "item.kubejs.smithing_template.hammer_upgrade.ingredients": " Resource Blocks"
+}
