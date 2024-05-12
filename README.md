@@ -2,7 +2,9 @@
 
 ### Playtesters Wanted!
 
-**This pack is still in alpha, and any feedback you can give is appreciated. Please feel free to be as honest and detailed as you want. In addition, because this project is still in development, it may change and certain features may be added or removed.**
+If you play this modpack and want to let me know how you think, please head over to our [Issues page on GitHub](https://github.com/Warhand/Limitless-Expanse/issues) and open up a new **Player feedback** issue report. Any and all feedback you can provide will be valuable to making sure this project is as good as it can be!
+
+**This pack is still in alpha, it may change, and certain features may be added or removed.**
 
 ---
 
