@@ -29,9 +29,6 @@
 				ancient = true
 				blossom = true
 
-			[general.types.wood_type.betterarcheology]
-				rotten = true
-
 		[general.types.leaves_type]
 
 			[general.types.leaves_type.quark]
