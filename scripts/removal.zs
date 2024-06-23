@@ -30,7 +30,9 @@ val removeCrafting as IIngredient[] = [
 	<item:minecraft:packed_mud>,
 	<item:supplementaries:relayer>,
 	<item:supplementaries:rope>,
-	<item:supplementaries:sack>
+	<item:supplementaries:sack>,
+	<item:minecraft:sea_lantern>,
+	<item:farmersdelight:canvas>
 ];
 
 for item in removeCrafting{
@@ -98,7 +100,20 @@ val trash as IIngredient[] = [
 	<item:shieldexp:griefer_shield>,
 	<item:shieldexp:paragon_shield>,
 	<item:apotheosis:diamond_mining_arrow>,
-	<item:apotheosis:iron_mining_arrow>
+	<item:apotheosis:iron_mining_arrow>,
+	<item:sullysmod:tortoise_scute>,
+	<item:sullysmod:tortoise_shell>,
+	<item:sullysmod:tortoise_egg>,
+	<item:etcetera:raw_bismuth>,
+	<item:etcetera:bismuth_ingot>,
+	<item:etcetera:chisel>,
+	<item:etcetera:wrench>,
+	<item:etcetera:hammer>,
+	<item:etcetera:raw_bismuth_block>,
+	<item:etcetera:bismuth_block>,
+	<item:etcetera:nether_bismuth_ore>,
+	<item:etcetera:item_stand>,
+	<item:etcetera:glow_item_stand>
 ];
 
 for item in trash{
