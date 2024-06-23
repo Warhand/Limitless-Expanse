@@ -47,6 +47,8 @@ val straw = <item:farmersdelight:straw>;
 
 //Recipe additions
 
+craftingTable.addShaped("canvas", <item:farmersdelight:canvas> * 3, [[stringItem, stringItem, stringItem], [stringItem, stringItem, stringItem], [stringItem, stringItem, stringItem]]);
+
 craftingTable.addShapeless("packed_mud", packed_mud, [straw, mud]);
 
 craftingTable.addShapeless("farmer_twine", twine * 2, [straw, straw]);
@@ -57,14 +59,14 @@ craftingTable.addShaped("copper_rail", <item:modernminecarts:copper_rail> * 6, [
 	[copper_ingot, redstone, copper_ingot]]);
 
 craftingTable.addShaped("sack_recipe", <item:supplementaries:sack>, [
-	[canvas, twine, canvas],
+	[canvas, <item:supplementaries:rope>, canvas],
 	[canvas, empty, canvas],
 	[canvas, canvas, canvas]]);
 
 craftingTable.addShaped("bundle_recipe", <item:minecraft:bundle>, [
-	[leather, twine, leather],
+	[empty, <item:supplementaries:rope>, empty],
 	[leather, empty, leather],
-	[leather, leather, leather]]);
+	[empty, leather, empty]]);
 
 craftingTable.addShapeless("salt_straw_to_shard", <item:galosphere:pink_salt_shard>, [<item:galosphere:pink_salt_straw>]);
 
@@ -88,7 +90,7 @@ craftingTable.addShaped("silver_relayer", <item:supplementaries:relayer>, [
 	[redstone, redstone, silver], 
 	[cobble, cobble, cobble]]);
 
-craftingTable.addShapeless("arrow_bundle", arrow_bundle, [arrow, arrow, arrow, arrow, twine, arrow, arrow, arrow, arrow]);
+craftingTable.addShapeless("arrow_bundle", arrow_bundle, [arrow, arrow, arrow, arrow, <item:supplementaries:rope>, arrow, arrow, arrow, arrow]);
 
 craftingTable.addShaped("custom_hallowed_gem", <item:illagerinvasion:hallowed_gem>, [
 	[ingot_gold, unusual_dust, ingot_gold],
@@ -204,3 +206,28 @@ craftingTable.addShaped("infuser_upgrade", <item:enchantinginfuser:advanced_ench
 		"level_cost": 3
 	}
 );
+
+craftingTable.addShaped("new_sea_lantern", <item:minecraft:sea_lantern>, [[<item:minecraft:prismarine_shard>, <item:minecraft:prismarine_crystals>, <item:minecraft:prismarine_shard>], [<item:minecraft:prismarine_crystals>, <item:minecraft:glow_ink_sac>, <item:minecraft:prismarine_crystals>], [<item:minecraft:prismarine_shard>, <item:minecraft:prismarine_crystals>, <item:minecraft:prismarine_shard>]]);
+
+craftingTable.addShaped("kelp_roll_fish", <item:farmersdelight:kelp_roll>, [[<item:farmersdelight:cooked_rice>, <tag:items:limitless_expanse:kelp_roll/fish>, <item:farmersdelight:cooked_rice>],[<item:minecraft:dried_kelp>, <item:minecraft:dried_kelp>, <item:minecraft:dried_kelp>]]);
+
+//Iridescent block crafting
+
+val iridescent as IItemStack[IIngredient] = {
+	<tag:items:minecraft:terracotta>.asIIngredient(): <item:etcetera:iridescent_terracotta>,
+	<tag:items:minecraft:wool>.asIIngredient(): <item:etcetera:iridescent_wool>,
+	<tag:items:forge:concrete>.asIIngredient(): <item:etcetera:iridescent_concrete>,
+	<tag:items:etcetera:glazed_terracotta>.asIIngredient(): <item:etcetera:iridescent_glazed_terracotta>,
+	<tag:items:forge:glass_panes>.asIIngredient(): <item:etcetera:iridescent_glass_pane>,
+	<tag:items:forge:glass>.asIIngredient(): <item:etcetera:iridescent_glass>,
+};
+
+for input, output in iridescent {
+	craftingTable.addShapeless("crafting_shapeless_" + output.registryName.path, output, [input, <item:quark:myalite_crystal>]);
+}
+
+craftingTable.addShapeless("crafting_shapeless_iridescent_lantern", <item:etcetera:iridescent_lantern>, [<item:minecraft:sea_lantern>, <item:quark:myalite_crystal>]);
+
+craftingTable.addShapeless("crafting_shapeless_iridescent_bars", <item:etcetera:bismuth_bars>, [<item:minecraft:iron_bars>, <item:quark:myalite_crystal>]);
+
+craftingTable.addShapeless("dough_from_bottle", <item:farmersdelight:wheat_dough> * 3, [<item:minecraft:potion>.withTag({Potion: "minecraft:water"}), <item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]);
