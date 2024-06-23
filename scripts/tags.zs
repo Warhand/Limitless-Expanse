@@ -1,3 +1,5 @@
+#priority 98
+
 import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.ingredient.type.IIngredientAny;
 import crafttweaker.api.item.IItemStack;
@@ -82,7 +84,8 @@ val gotta_catch_em_all = [
 	<entitytype:minecraft:magma_cube>,
 	<entitytype:quark:shiba>,
 	<entitytype:minecraft:spider>,
-	<entitytype:minecraft:cave_spider>
+	<entitytype:minecraft:cave_spider>,
+	<entitytype:etcetera:chapple>
 ];
 
 for entity in gotta_catch_em_all {
@@ -160,3 +163,24 @@ for item in eyes {
 	<tag:items:quad:never_despawn>.add(item);
 	<tag:items:quad:immune/all>.add(item);
 }
+
+//adding ingredients for expanded kelp roll recipes
+
+val kelp_roll_fish = [
+	<tag:items:forge:raw_fishes>
+];
+
+for item in kelp_roll_fish {
+	<tag:items:limitless_expanse:kelp_roll/fish>.add(item);
+}
+
+//adding eggs to the egg tags
+
+<tag:items:forge:eggs>.add(<item:enderzoology:owl_egg>);
+<tag:items:forge:eggs>.add(<item:naturalist:tortoise_egg>);
+
+<tag:items:farmersdelight:cabbage_roll_ingredients>.add(<item:enderzoology:owl_egg>);
+<tag:items:farmersdelight:cabbage_roll_ingredients>.add(<item:naturalist:tortoise_egg>);
+
+<tag:items:balm:eggs>.add(<item:enderzoology:owl_egg>);
+<tag:items:balm:eggs>.add(<item:naturalist:tortoise_egg>);
