@@ -73,7 +73,7 @@
 [chopCounting]
 	#Method to use for computing the number of chops needed to fell a tree
 	#Allowed Values: LINEAR, LOGARITHMIC
-	algorithm = "LOGARITHMIC"
+	algorithm = "LINEAR"
 	#How to round the number of chops needed to fell a tree; this is more meaningful for smaller trees
 	#Allowed Values: DOWN, NEAREST, UP
 	rounding = "NEAREST"
@@ -90,10 +90,10 @@
 	[chopCounting.linear]
 		#The number of chops per block required to fell a tree; if chopsPerBlock = 0.5, it will take 50 chops to fell a 100 block tree
 		#Range: 0.0 ~ 7.0
-		chopsPerBlock = 1.0
+		chopsPerBlock = 0.1
 		#The base number of chops required to fell a tree regardless of its size
 		#Range: -10000.0 ~ 10000.0
-		baseNumChops = 0.0
+		baseNumChops = 4.0
 
 [compatibility]
 	#https://www.curseforge.com/minecraft/mc-mods/carry-on
