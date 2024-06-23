@@ -134,7 +134,6 @@ events.register<LivingHurtEvent>(event => {
 	val subject = event.entity;
 	val lvl = subject.level;
 	val source = event.source.entity;
-	println("--- livinghurt start");
 	if source != null {
 		if lvl.isClientSide {
 		return;
@@ -153,7 +152,6 @@ events.register<LivingHurtEvent>(event => {
 			}
 		}
 	}
-	println("--- livinghurt end");
 });
 
 //break hammers
@@ -184,3 +182,9 @@ events.register<LeftClickBlockEvent>(event => {
 <item:kubejs:hammer_smithing_template>.addTooltip(Component.translatable("item.kubejs.smithing_template.hammer_upgrade.applies_to").withStyle(<constant:minecraft:formatting:blue>));
 <item:kubejs:hammer_smithing_template>.addTooltip(Component.translatable("item.minecraft.smithing_template.ingredients").withStyle(<constant:minecraft:formatting:gray>));
 <item:kubejs:hammer_smithing_template>.addTooltip(Component.translatable("item.kubejs.smithing_template.hammer_upgrade.ingredients").withStyle(<constant:minecraft:formatting:blue>));
+
+//Change stack sizes
+
+<item:minecraft:potion>.setMaxStackSize(16);
+<item:minecraft:golden_apple>.setMaxStackSize(16);
+<item:minecraft:enchanted_golden_apple>.setMaxStackSize(16);
