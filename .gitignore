@@ -63,3 +63,4 @@ emi.json
 /local/kubejs/export
 *.disabled
 profile.json
+config/spark/activity.json
