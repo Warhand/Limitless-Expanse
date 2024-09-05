@@ -1,0 +1,58 @@
+{
+  "damage_protection": {
+    "projectiles": true,
+    "sweeping": true,
+    "direct": true,
+    "explosions": true,
+    "vanilla_teams": false
+  },
+  "environmental_protection": {
+    "explosions": false,
+    "bushes": false,
+    "fires": false,
+    "freezing": false,
+    "drowning": false
+  },
+  "status_effect_protection": {
+    "enabled": true,
+    "living_effects": [
+      "minecraft:instant_damage",
+      "minecraft:poison"
+    ],
+    "undead_effects": [
+      "minecraft:instant_health",
+      "minecraft:regeneration"
+    ]
+  },
+  "protected_entities": {
+    "tamable": true,
+    "foxes": true,
+    "horses": true,
+    "players": false,
+    "blacklist": []
+  },
+  "revival": {
+    "enabled": true,
+    "named_entities": true,
+    "revival_blocks": [
+      "minecraft:copper_block"
+    ],
+    "entity_blacklist": [],
+    "entity_whitelist": []
+  },
+  "ownership": {
+    "removal": true,
+    "transfer": false,
+    "default_shears": true,
+    "extra_shears": [],
+    "default_stick": true,
+    "extra_sticks": []
+  },
+  "player_whitelist": [
+    {
+      "name": "SophiaCoxy",
+      "online_uuid": "a56db060-6840-4824-9a47-25f264ca3319",
+      "offline_uuid": "451c0f64-751f-3f7c-a2d8-834497b64a29"
+    }
+  ]
+}

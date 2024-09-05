@@ -19,13 +19,6 @@
   "rewards": {
     "1": {
       "title": "Common Hat",
-      "icon": {
-        "item": {
-          "id": "minecraft:air",
-          "count": 0
-        },
-        "type": "heracles:item"
-      },
       "item": {
         "id": "simplehats:hatbag_common",
         "count": 1
@@ -43,8 +36,8 @@
     "groups": {
       "Main": {
         "position": [
-          -14,
-          -4
+          0,
+          0
         ]
       }
     },
@@ -61,10 +54,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

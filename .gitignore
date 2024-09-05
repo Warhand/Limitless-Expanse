@@ -58,3 +58,8 @@ automodlist.txt.old
 data - Shortcut.lnk
 resources - Shortcut.lnk
 /local/kubejs/exported_packs
+config/spark/activity.json
+emi.json
+/local/kubejs/export
+*.disabled
+profile.json

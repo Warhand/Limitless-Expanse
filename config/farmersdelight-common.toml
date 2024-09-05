@@ -65,19 +65,19 @@
 	[world.wild_beetroots]
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
-		chance = 30
+		chance = 2147483647
 
 	#Wild Potato generation
 	[world.wild_potatoes]
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
-		chance = 100
+		chance = 2147483647
 
 	#Wild Carrot generation
 	[world.wild_carrots]
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
-		chance = 120
+		chance = 2147483647
 
 	#Wild Onion generation
 	[world.wild_onions]

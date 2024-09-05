@@ -1,0 +1,60 @@
+
+#Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
+[types]
+
+	[types.wood_type]
+
+		[types.wood_type.quark]
+			azalea = true
+			ancient = true
+			blossom = true
+
+	[types.leaves_type]
+
+		[types.leaves_type.quark]
+			ancient = true
+			blue_blossom = true
+			lavender_blossom = true
+			orange_blossom = true
+			yellow_blossom = true
+			red_blossom = true
+
+#Disables specific entries
+[entries]
+
+	[entries.wood_type]
+
+		[entries.wood_type.farmersdelight]
+			cabinet = true
+
+		[entries.wood_type.quark]
+			vertical_planks = false
+			post = false
+			chest = false
+			stripped_post = false
+			ladder = false
+			trapped_chest = false
+			bookshelf = false
+			hollow_log = false
+
+		[entries.wood_type.friendsandfoes]
+			beehive = false
+
+		[entries.wood_type.woodworks]
+			bookshelf = false
+			chiseled_bookshelf = true
+			trapped_chest = false
+			boards = true
+			chest = false
+			ladder = false
+			beehive = true
+
+	[entries.leaves_type]
+
+		[entries.leaves_type.quark]
+			hedge = true
+			leaf_carpet = true
+
+		[entries.leaves_type.woodworks]
+			leaf_pile = false
+
