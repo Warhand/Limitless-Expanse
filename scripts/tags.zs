@@ -124,6 +124,14 @@ for entity in baby_dont_hurt_me {
 	<tag:entity_types:supplementaries:cage_baby_catchable>.add(entity);
 }
 
+val tickable_in_cages = [
+	<entitytype:etcetera:chapple>
+];
+
+for entity in tickable_in_cages {
+	<tag:entity_types:supplementaries:tickable_when_captured>.add(entity);
+}
+
 //add hammers to hammers tag
 
 val hammers = [
@@ -164,16 +172,6 @@ for item in eyes {
 	<tag:items:quad:immune/all>.add(item);
 }
 
-//adding ingredients for expanded kelp roll recipes
-
-val kelp_roll_fish = [
-	<tag:items:forge:raw_fishes>
-];
-
-for item in kelp_roll_fish {
-	<tag:items:limitless_expanse:kelp_roll/fish>.add(item);
-}
-
 //adding eggs to the egg tags
 
 <tag:items:forge:eggs>.add(<item:enderzoology:owl_egg>);
@@ -184,3 +182,76 @@ for item in kelp_roll_fish {
 
 <tag:items:balm:eggs>.add(<item:enderzoology:owl_egg>);
 <tag:items:balm:eggs>.add(<item:naturalist:tortoise_egg>);
+
+<tag:entity_types:pet_cemetery:drops_pet_collar>.add(<entitytype:minecraft:horse>);
+
+//Adding ladders to quark ladders tag
+
+val ladders = [
+	<item:woodworks:spruce_ladder>,
+	<item:woodworks:birch_ladder>,
+	<item:woodworks:jungle_ladder>,
+	<item:woodworks:acacia_ladder>,
+	<item:woodworks:dark_oak_ladder>,
+	<item:woodworks:mangrove_ladder>,
+	<item:woodworks:cherry_ladder>,
+	<item:woodworks:bamboo_ladder>,
+	<item:woodworks:crimson_ladder>,
+	<item:woodworks:warped_ladder>
+];
+
+val block_ladders = [
+	<block:woodworks:spruce_ladder>,
+	<block:woodworks:birch_ladder>,
+	<block:woodworks:jungle_ladder>,
+	<block:woodworks:acacia_ladder>,
+	<block:woodworks:dark_oak_ladder>,
+	<block:woodworks:mangrove_ladder>,
+	<block:woodworks:cherry_ladder>,
+	<block:woodworks:bamboo_ladder>,
+	<block:woodworks:crimson_ladder>,
+	<block:woodworks:warped_ladder>
+];
+
+for item in ladders {
+	<tag:items:quark:ladders>.add(item);
+}
+
+for block in block_ladders {
+	<tag:blocks:quark:ladders>.add(block);
+}
+
+//adding chests to revertable chest tags
+<tag:items:quark:revertable_chests>.add(<tag:items:forge:chests>);
+
+//fish tags
+
+<tag:items:forge:raw_fishes/bass>.add(<item:kubejs:bass_slice>);
+<tag:items:forge:raw_fishes/catfish>.add(<item:kubejs:catfish_slice>);
+
+<tag:items:forge:raw_fishes>.add(<item:kubejs:bass_slice>);
+<tag:items:forge:raw_fishes>.add(<item:kubejs:catfish_slice>);
+
+<tag:items:forge:cooked_fishes/bass>.add(<item:kubejs:cooked_bass_slice>);
+<tag:items:forge:cooked_fishes/catfish>.add(<item:kubejs:cooked_catfish_slice>);
+
+<tag:items:forge:cooked_fishes>.add(<item:kubejs:cooked_bass_slice>);
+<tag:items:forge:cooked_fishes>.add(<item:kubejs:cooked_catfish_slice>);
+
+<tag:items:farmersdelight:cabbage_roll_ingredients>.add(<item:kubejs:bass_slice>);
+<tag:items:farmersdelight:cabbage_roll_ingredients>.add(<item:kubejs:catfish_slice>);
+<tag:items:naturalist:duck_food_items>.add(<item:kubejs:bass_slice>);
+<tag:items:naturalist:duck_food_items>.add(<item:kubejs:catfish_slice>);
+
+<tag:items:forge:vegetables>.add(<item:kubejs:tomato_slice>);
+<tag:items:forge:vegetables/tomato>.add(<item:kubejs:tomato_slice>);
+<tag:items:forge:crops/tomato>.add(<item:kubejs:tomato_slice>);
+<tag:items:forge:crops>.add(<item:kubejs:tomato_slice>);
+
+//adding fodder to giraffe food tag
+<tag:items:naturalist:giraffe_food_items>.add(<item:supplementaries:fodder>);
+
+//Adding zebras to horse feed tag
+
+<tag:entity_types:farmersdelight:horse_feed_users>.add(<entitytype:naturalist:zebra>);
+<tag:entity_types:farmersdelight:horse_feed_tempted>.add(<entitytype:naturalist:zebra>);
