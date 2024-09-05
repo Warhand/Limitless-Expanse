@@ -31,6 +31,7 @@ import crafttweaker.forge.api.player.interact.RightClickItemEvent;
 <item:justhammers:gold_hammer>.maxDamage = 74;
 <item:justhammers:diamond_hammer>.maxDamage = 3436;
 <item:justhammers:netherite_hammer>.maxDamage = 4468;
+<item:minecraft:iron_pickaxe>.maxDamage = 0;
 
 //Totem cooldown
 
@@ -103,18 +104,6 @@ events.register<DetonateExplosionEvent>(event => {
 	}
 });
 
-//cancel firework boosting
-
-events.register<RightClickItemEvent>(event => {
-	val itemUsed = event.itemStack;
-	if (event.entity.level.isClientSide) {
-		return;
-	}
-	if (itemUsed.withoutTag()) == <item:minecraft:firework_rocket> {
-		event.cancel();
-	}
-});
-
 //process arrow bundles
 
 events.register<RightClickItemEvent>(event => {
@@ -139,12 +128,9 @@ events.register<LivingHurtEvent>(event => {
 		return;
 		}
 		if source.getType() == <entitytype:minecraft:player> {
-			if subject.getType() == <entitytype:minecraft:pillager> {
-				println("true pillager");
+			if subject.getType().isIn(<tag:entity_types:minecraft:raiders>) {
 				if subject.data["Wave"] == 0 {
-					println("true wave");
 					if subject.data["PatrolLeader"] == 1 {
-						println("true leader");
 						subject.updateData({PatrolLeader: 0});
 						subject.updateData({DeathLootTable: "limitless_expanse:entities/ominous_bottle_1"});
 					}
