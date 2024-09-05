@@ -1,0 +1,21 @@
+{
+    "type": "forge:conditional",
+    "recipes": [
+      {
+        "conditions": [
+          {
+            "type": "woodworks:config",
+            "value": "sawmill"
+          }
+        ],
+        "recipe": {
+          "type": "woodworks:sawmill",
+          "count": 2,
+          "ingredient": {
+            "item": "minecraft:flowering_azalea_leaves"
+          },
+          "result": "quark:flowering_azalea_leaf_carpet"
+        }
+      }
+    ]
+  }

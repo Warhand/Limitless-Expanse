@@ -1,0 +1,21 @@
+{
+    "type": "forge:conditional",
+    "recipes": [
+      {
+        "conditions": [
+          {
+            "type": "woodworks:config",
+            "value": "sawmill"
+          }
+        ],
+        "recipe": {
+          "type": "woodworks:sawmill",
+          "count": 2,
+          "ingredient": {
+            "item": "minecraft:birch_leaves"
+          },
+          "result": "quark:birch_leaf_carpet"
+        }
+      }
+    ]
+  }

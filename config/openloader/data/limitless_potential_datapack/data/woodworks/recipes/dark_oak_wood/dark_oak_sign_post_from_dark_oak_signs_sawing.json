@@ -1,0 +1,21 @@
+{
+    "type": "forge:conditional",
+    "recipes": [
+      {
+        "conditions": [
+          {
+            "type": "woodworks:config",
+            "value": "sawmill"
+          }
+        ],
+        "recipe": {
+          "type": "woodworks:sawmill",
+          "count": 2,
+          "ingredient": {
+            "item": "minecraft:dark_oak_sign"
+          },
+          "result": "supplementaries:sign_post_dark_oak"
+        }
+      }
+    ]
+  }

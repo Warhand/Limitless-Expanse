@@ -1,0 +1,21 @@
+{
+    "type": "forge:conditional",
+    "recipes": [
+      {
+        "conditions": [
+          {
+            "type": "woodworks:config",
+            "value": "sawmill"
+          }
+        ],
+        "recipe": {
+          "type": "woodworks:sawmill",
+          "count": 8,
+          "ingredient": {
+            "tag": "quark:azalea_logs"
+          },
+          "result": "quark:azalea_planks_vertical_slab"
+        }
+      }
+    ]
+  }

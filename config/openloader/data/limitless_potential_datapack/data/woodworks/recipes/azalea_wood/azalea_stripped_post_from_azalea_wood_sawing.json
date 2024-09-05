@@ -1,0 +1,21 @@
+{
+    "type": "forge:conditional",
+    "recipes": [
+      {
+        "conditions": [
+          {
+            "type": "woodworks:config",
+            "value": "sawmill"
+          }
+        ],
+        "recipe": {
+          "type": "woodworks:sawmill",
+          "count": 3,
+          "ingredient": {
+            "item": "quark:stripped_azalea_wood"
+          },
+          "result": "quark:stripped_azalea_post"
+        }
+      }
+    ]
+  }
