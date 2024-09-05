@@ -93,7 +93,7 @@
 		chopsPerBlock = 0.1
 		#The base number of chops required to fell a tree regardless of its size
 		#Range: -10000.0 ~ 10000.0
-		baseNumChops = 4.0
+		baseNumChops = 5.0
 
 [compatibility]
 	#https://www.curseforge.com/minecraft/mc-mods/carry-on
