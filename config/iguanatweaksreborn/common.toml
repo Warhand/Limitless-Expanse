@@ -559,7 +559,7 @@
 	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via json in this feature's folder. Note that removing entries from the json requires a Minecraft Restart
 	[Items."Item Stats"]
 		#If set to true items in the 'no_damage_items' and 'no_efficiency_items' will get a tooltip. Items with durability get a durability tooltip. Tools get an efficiency tooltip.
-		"More Items Tooltips" = true
+		"More Items Tooltips" = false
 		#If set to true items will no longer break, will be left with 1 durability. Items in the iguanatweaksreborn:not_unbreakable tag will break instead.
 		"Unbreakable Items" = true
 		#If set to true items will no longer break if enchanted. Ignores the iguanatweaksreborn:not_unbreakable item tag.
@@ -823,7 +823,7 @@
 	#Better repair, free rename and merge. With this feature enabled, EMI's repairs and enchanting in anvil recipes are removed.
 	"Enable Anvils" = false
 	#Changes to some enchantments related stuff.
-	"Enable Enchantments" = true
+	"Enable Enchantments" = false
 	#Changes the experience lost on death and xp per level required.
 	"Enable Player Experience" = true
 
@@ -836,7 +836,7 @@
 		#Experience dropped by blocks (Ores and Spawners) will be multiplied by this multiplier. Experience dropped by blocks are still affected by 'Global Experience Multiplier'
 		#Can be set to 0 to make blocks drop no experience
 		#Range: 0.0 ~ 128.0
-		"Experience from Blocks Multiplier" = 1.0
+		"Experience from Blocks Multiplier" = 1.2
 		#Experience dropped from mobs that come from spawners will be multiplied by this multiplier.
 		#Experience dropped by mobs from spawners are still affected by 'Global Experience Multiplier'
 		#Can be set to 0 to disable experience drop from mob that come from spawners.
@@ -846,13 +846,13 @@
 		#Experience dropped from mobs that DON'T come from spawners is still affected by 'Global Experience Multiplier'
 		#Can be set to 0 to disable experience drop from mob that DON'T come from spawners.
 		#Range: 0.0 ~ 128.0
-		"Natural Mobs Multiplier" = 1.0
+		"Natural Mobs Multiplier" = 1.5
 		#Vanilla mobs drop 1~4 xp per equipment they have.
 		#Range: > 0
-		"Bonus experience per equipment" = 2
+		"Bonus experience per equipment" = 6
 		#This is added to 'Bonus experience per equipment'.
 		#Range: > 0
-		"Bonus experience per enchanted equipment" = 2
+		"Bonus experience per enchanted equipment" = 8
 		#Bottle o' enchanting will drop this more XP. Experience is still affected by 'Global Experience Multiplier'
 		#Can be set to 0 to make Bottle o' enchanting drop no bonus experience
 		#Range: 0 ~ 512
@@ -917,7 +917,7 @@
 		#Mending only makes the tool repair by one durability every 2 xp instead of 2 durability/1 xp.
 		"Mending Nerf" = false
 		#Respiration decreases air consumption by 50% per level instead of 100%.
-		"Respiration Nerf" = true
+		"Respiration Nerf" = false
 		#Change the efficiency formula from tool_efficiency+(lvl*lvl+1) to tool_efficiency * (1 + (0.5*lvl))
 		"Better Efficiency Formula" = true
 		#The ore_drops formula is changed to 30%/60%/90%/... drop increase from 25%/75%/125%/...
