@@ -24,15 +24,6 @@ import crafttweaker.forge.api.event.entity.living.spawn.FinalizeMobSpawnEvent;
 import crafttweaker.forge.api.event.interact.LeftClickBlockEvent;
 import crafttweaker.forge.api.player.interact.RightClickItemEvent;
 
-//Hammer rebalance
-
-<item:justhammers:stone_hammer>.maxDamage = 432;
-<item:justhammers:iron_hammer>.maxDamage = 554;
-<item:justhammers:gold_hammer>.maxDamage = 74;
-<item:justhammers:diamond_hammer>.maxDamage = 3436;
-<item:justhammers:netherite_hammer>.maxDamage = 4468;
-<item:minecraft:iron_pickaxe>.maxDamage = 0;
-
 //Totem cooldown
 
 events.register<LivingUseTotemEvent>(event => {
@@ -136,26 +127,6 @@ events.register<LivingHurtEvent>(event => {
 					}
 				}
 			}
-		}
-	}
-});
-
-//break hammers
-
-events.register<LeftClickBlockEvent>(event => {
-	val heldItem = event.itemStack;
-	val entity = event.entity;
-	val lvl = entity.level;
-	if lvl.isClientSide {
-		return;
-		}
-	if <tag:items:limitless_expanse:hammers>.contains(heldItem.registryName) {
-		if heldItem.damage >= (heldItem.maxDamage - 1) {
-			println("true");
-			println(event.hand as string);
-			heldItem.asMutable().shrink();
-			entity.playSound(<soundevent:minecraft:entity.item.break>, 1.0, 1.0);
-			entity.playNotifySound(<soundevent:minecraft:entity.item.break>, <constant:minecraft:sound/source:players>, 1.0, 1.0);
 		}
 	}
 });
