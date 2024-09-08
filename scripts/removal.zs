@@ -14,8 +14,6 @@ villagerTrades.removeWanderingTrade(2, <item:minecraft:beacon>);
 
 //Recipe removals
 
-craftingTable.removeByModid("justhammers");
-
 furnace.removeByRegex("quark.tweaks.smelting.raw_.*");
 
 smithing.remove(<item:modernminecarts:copper_rail>);
@@ -53,7 +51,18 @@ val removeCrafting as IIngredient[] = [
 	<item:etcetera:iridescent_lantern>,
 	<item:minecraft:lantern>,
 	<item:minecraft:soul_lantern>,
-	<item:supplementaries:fodder>
+	<item:supplementaries:fodder>,
+	<item:simplytools:stone_hammer>,
+	<item:simplytools:iron_hammer>,
+	<item:simplytools:golden_hammer>,
+	<item:simplytools:diamond_hammer>,
+	<item:simplytools:netherite_hammer>,
+	<item:simplytools:stone_excavator>,
+	<item:simplytools:iron_excavator>,
+	<item:simplytools:golden_excavator>,
+	<item:simplytools:diamond_excavator>,
+	<item:simplytools:netherite_excavator>,
+	<item:miningmaster:gem_forge>
 ];
 
 for item in removeCrafting{
@@ -61,30 +70,6 @@ for item in removeCrafting{
 }
 
 val jei_removal as IItemStack[] = [
-	<item:justhammers:destructor_core>,
-	<item:justhammers:diamond_destructor_hammer>,
-	<item:justhammers:diamond_impact_hammer>,
-	<item:justhammers:diamond_reinforced_hammer>,
-	<item:justhammers:diamond_reinforced_impact_hammer>,
-	<item:justhammers:gold_destructor_hammer>,
-	<item:justhammers:gold_impact_hammer>,
-	<item:justhammers:gold_reinforced_hammer>,
-	<item:justhammers:gold_reinforced_impact_hammer>,
-	<item:justhammers:impact_core>,
-	<item:justhammers:iron_destructor_hammer>,
-	<item:justhammers:iron_impact_hammer>,
-	<item:justhammers:iron_reinforced_hammer>,
-	<item:justhammers:iron_reinforced_impact_hammer>,
-	<item:justhammers:netherite_destructor_hammer>,
-	<item:justhammers:netherite_impact_hammer>,
-	<item:justhammers:netherite_reinforced_hammer>,
-	<item:justhammers:netherite_reinforced_impact_hammer>,
-	<item:justhammers:reinforced_core>,
-	<item:justhammers:reinforced_impact_core>,
-	<item:justhammers:stone_destructor_hammer>,
-	<item:justhammers:stone_impact_hammer>,
-	<item:justhammers:stone_reinforced_hammer>,
-	<item:justhammers:stone_reinforced_impact_hammer>,
 	<item:supplementaries:bomb_blue_projectile>,
 	<item:supplementaries:bomb_blue>,
 	<item:supplementaries:bomb_projectile>,
@@ -190,7 +175,9 @@ val trash as IIngredient[] = [
 	<item:quark:bamboo_ladder>,
 	<item:quark:bamboo_chest>,
 	<item:quark:bamboo_trapped_chest>,
-	<item:quark:bamboo_bookshelf>
+	<item:quark:bamboo_bookshelf>,
+	<item:simplytools:wooden_hammer>,
+	<item:simplytools:wooden_excavator>
 ];
 
 for item in trash{
