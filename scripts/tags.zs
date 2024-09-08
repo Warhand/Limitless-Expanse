@@ -132,46 +132,6 @@ for entity in tickable_in_cages {
 	<tag:entity_types:supplementaries:tickable_when_captured>.add(entity);
 }
 
-//add hammers to hammers tag
-
-val hammers = [
-	<item:justhammers:stone_hammer>,
-	<item:justhammers:iron_hammer>,
-	<item:justhammers:gold_hammer>,
-	<item:justhammers:diamond_hammer>,
-	<item:justhammers:netherite_hammer>
-];
-
-for item in hammers {
-	<tag:items:limitless_expanse:hammers>.add(item);
-}
-
-//add end remastered eyes to quad tags
-
-val eyes = [
-	<item:endrem:cryptic_eye>,
-	<item:endrem:exotic_eye>,
-	<item:endrem:undead_eye>,
-	<item:endrem:witch_eye>,
-	<item:endrem:wither_eye>,
-	<item:endrem:magical_eye>,
-	<item:endrem:guardian_eye>,
-	<item:endrem:evil_eye>,
-	<item:endrem:cursed_eye>,
-	<item:endrem:rogue_eye>,
-	<item:endrem:old_eye>,
-	<item:endrem:nether_eye>,
-	<item:endrem:lost_eye>,
-	<item:endrem:corrupted_eye>,
-	<item:endrem:cold_eye>,
-	<item:endrem:black_eye>
-];
-
-for item in eyes {
-	<tag:items:quad:never_despawn>.add(item);
-	<tag:items:quad:immune/all>.add(item);
-}
-
 //adding eggs to the egg tags
 
 <tag:items:forge:eggs>.add(<item:enderzoology:owl_egg>);
