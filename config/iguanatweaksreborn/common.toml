@@ -552,18 +552,18 @@
 	#Retrieve name tags from name tagged entities.
 	"Enable Name tags" = true
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff might require a Minecraft restart.
-	"Enable Stack Sizes" = true
+	"Enable Stack Sizes" = false
 	#Wooden items have a lower chance to break in sunlight.
-	"Enable Ecologic Wood" = true
+	"Enable Ecologic Wood" = false
 
 	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via json in this feature's folder. Note that removing entries from the json requires a Minecraft Restart
 	[Items."Item Stats"]
 		#If set to true items in the 'no_damage_items' and 'no_efficiency_items' will get a tooltip. Items with durability get a durability tooltip. Tools get an efficiency tooltip.
-		"More Items Tooltips" = false
+		"More Items Tooltips" = true
 		#If set to true items will no longer break, will be left with 1 durability. Items in the iguanatweaksreborn:not_unbreakable tag will break instead.
 		"Unbreakable Items" = true
 		#If set to true items will no longer break if enchanted. Ignores the iguanatweaksreborn:not_unbreakable item tag.
-		"Unbreakable Enchanted Items" = true
+		"Unbreakable Enchanted Items" = false
 
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff might require a Minecraft restart.
 	[Items."Stack Sizes"]
