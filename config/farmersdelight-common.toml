@@ -44,7 +44,7 @@
 	#Stack size overrides
 	[overrides.stack_size]
 		#Should BowlFoodItems in the following list become stackable to 16, much like Farmer's Delight's meals?
-		enableStackableSoupItems = true
+		enableStackableSoupItems = false
 		#List of BowlFoodItems. They must extend this class to be affected. Default: vanilla soups and stews.
 		soupItemList = ["minecraft:mushroom_stew", "minecraft:beetroot_soup", "minecraft:rabbit_stew"]
 
