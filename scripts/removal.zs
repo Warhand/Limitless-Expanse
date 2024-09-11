@@ -26,8 +26,6 @@ recipes.removeByRegex("quark.building.crafting.chests.mixed.*");
 //removal arrays
 
 val removeCrafting as IIngredient[] = [
-	<item:enchantinginfuser:advanced_enchanting_infuser>,
-	<item:enchantinginfuser:enchanting_infuser>,
 	<item:farmersdelight:rope>,
 	<item:illagerinvasion:hallowed_gem>,
 	<item:minecraft:daylight_detector>,
