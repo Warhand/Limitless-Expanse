@@ -49,17 +49,14 @@ val unsorted_enchants = [
     <enchantment:minecraft:aqua_affinity>,
     <enchantment:minecraft:bane_of_arthropods>,
     <enchantment:minecraft:binding_curse>,
-    <enchantment:minecraft:blast_protection>,
     <enchantment:minecraft:channeling>,
     <enchantment:minecraft:depth_strider>,
-    <enchantment:minecraft:efficiency>,
     <enchantment:minecraft:feather_falling>,
     <enchantment:minecraft:fire_aspect>,
     <enchantment:minecraft:fire_protection>,
     <enchantment:minecraft:flame>,
     <enchantment:minecraft:fortune>,
     <enchantment:minecraft:frost_walker>,
-    <enchantment:minecraft:impaling>,
     <enchantment:minecraft:infinity>,
     <enchantment:minecraft:knockback>,
     <enchantment:minecraft:looting>,
@@ -68,15 +65,12 @@ val unsorted_enchants = [
     <enchantment:minecraft:lure>,
     <enchantment:minecraft:mending>,
     <enchantment:minecraft:multishot>,
-    <enchantment:minecraft:piercing>,
-    <enchantment:minecraft:power>,
     <enchantment:minecraft:projectile_protection>,
     <enchantment:minecraft:protection>,
     <enchantment:minecraft:punch>,
     <enchantment:minecraft:quick_charge>,
     <enchantment:minecraft:respiration>,
     <enchantment:minecraft:riptide>,
-    <enchantment:minecraft:sharpness>,
     <enchantment:minecraft:silk_touch>,
     <enchantment:minecraft:smite>,
     <enchantment:minecraft:soul_speed>,
@@ -96,13 +90,19 @@ val unsorted_enchants = [
     <enchantment:miningmaster:stonebreaker>,
     <enchantment:momentum:momentum>,
     <enchantment:supplementaries:stasis>,
-    <enchantment:veinmining:vein_mining>
+    <enchantment:veinmining:vein_mining>,
+    <enchantment:minecraft:unbreaking>,
+    <enchantment:minecraft:impaling>,
 ];
 
 var List_diamond = new stdlib.List<StringData>();
 
 var diamond_enchants = [
-    <enchantment:minecraft:unbreaking>.registryName
+    <enchantment:minecraft:power>.registryName,
+    <enchantment:minecraft:efficiency>.registryName,
+    <enchantment:minecraft:sharpness>.registryName,
+    <enchantment:minecraft:piercing>.registryName,
+    <enchantment:minecraft:blast_protection>.registryName
 ];
 
 for entry in diamond_enchants {
@@ -117,7 +117,7 @@ var diamond_json = new ListData(List_diamond);
         "tag": "miningmaster:gem_enchanting_blacklist"
     },
     "gem": {
-        "item": "sullysmod:polished_jade"
+        "item": "minecraft:diamond"
     },
     "enchantments": diamond_json
 });
