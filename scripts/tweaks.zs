@@ -23,6 +23,7 @@ import crafttweaker.forge.api.event.entity.living.LivingUseTotemEvent;
 import crafttweaker.forge.api.event.entity.living.spawn.FinalizeMobSpawnEvent;
 import crafttweaker.forge.api.event.interact.LeftClickBlockEvent;
 import crafttweaker.forge.api.player.interact.RightClickItemEvent;
+import crafttweaker.forge.api.event.item.PlayerDestroyItemEvent;
 
 //Totem cooldown
 
@@ -145,3 +146,65 @@ events.register<LivingHurtEvent>(event => {
 <item:minecraft:potion>.setMaxStackSize(16);
 <item:minecraft:golden_apple>.setMaxStackSize(16);
 <item:minecraft:enchanted_golden_apple>.setMaxStackSize(16);
+
+//Tools downgrade to iron after breaking
+
+val break_to_iron as IItemStack[IItemStack] = {
+	<item:minecraft:golden_sword> : <item:minecraft:iron_sword>,
+	<item:minecraft:golden_axe> : <item:minecraft:iron_axe>,
+	<item:minecraft:golden_shovel> : <item:minecraft:iron_shovel>,
+	<item:minecraft:golden_hoe> : <item:minecraft:iron_hoe>,
+	<item:minecraft:golden_pickaxe> : <item:minecraft:iron_pickaxe>
+};
+
+events.register<PlayerDestroyItemEvent>(event => {
+	val broken = event.original;
+	val subject = event.entity;
+	val player = subject as Player;
+	val lvl = subject.level;
+	val enchants = broken.getEnchantments();
+	val assoc_key = broken.withoutTag();
+	println(broken as string);
+	if (lvl.isClientSide || !<tag:items:iguanatweaksreborn:not_unbreakable>.contains(broken)) || !(assoc_key in break_to_iron) {
+		return;
+		}
+	if (broken.hasCustomHoverName) {
+		player.setItemInHand(event.hand, (break_to_iron[assoc_key]).setEnchantments(enchants).withDisplayName(broken.hoverName));
+	} else {
+		player.setItemInHand(event.hand, (break_to_iron[assoc_key]).setEnchantments(enchants));
+	}
+});
+
+//Armor downgrade after breaking
+
+//events.register<LivingHurtEvent>(event => {
+//	val subject = event.entity;
+//	val lvl = subject.level;
+//	val source = event.source.entity;
+//	if source != null {
+//		if lvl.isClientSide {
+//		return;
+//		}
+//		if subject.getType() == <entitytype:minecraft:player> {
+//			val player = subject as Player;
+//			val inventory = player.getInventory();
+//			val armor = inventory.getArmor(3) as IItemStack;
+//			println(armor as string);
+//	}
+//}});
+
+events.register<LivingEquipmentChangeEvent>(event => {
+	val subject = event.entity;
+	val lvl = subject.level;
+    println("LivingEquipmentChangeEvent ran!");
+		if lvl.isClientSide {
+		return;
+		}
+		if subject.getType() == <entitytype:minecraft:player> {
+			val player = subject as Player;
+			val from = event.from;
+			val to = event.to;
+			println("Equipment changed from... " + from as IItemStack as string);
+			println("to... " + to as IItemStack as string);
+			println("In slot... " + event.slot as string);
+}});
