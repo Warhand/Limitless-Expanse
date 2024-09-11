@@ -215,14 +215,6 @@ for potion in potions {
 	}
 );
 
-craftingTable.addShaped("infuser", <item:enchantinginfuser:enchanting_infuser>, [[empty, <item:minecraft:enchanted_book>, empty], [<item:minecraft:amethyst_shard>, <item:minecraft:crying_obsidian>, <item:minecraft:amethyst_shard>], [<item:minecraft:crying_obsidian>, <item:minecraft:enchanting_table>, <item:minecraft:crying_obsidian>]]);
-
-craftingTable.addShaped("infuser_upgrade", <item:enchantinginfuser:advanced_enchanting_infuser>, [
-	[empty, <item:quark:ancient_tome>, empty], 
-	[nether_ingot, scale, nether_ingot], 
-	[scale, <item:enchantinginfuser:enchanting_infuser>, scale]
-]);
-
 <recipetype:lychee:anvil_crafting>.addJsonRecipe(
 	"totem_recharge", 
 	{
